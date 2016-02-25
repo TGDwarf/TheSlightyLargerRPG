@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a90d8d2-394a-4d9a-974f-20b2529c1d48" name="Default" comment="" />
+    <list default="true" id="1a90d8d2-394a-4d9a-974f-20b2529c1d48" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GAME/Menu/LoadGameMenu.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GAME/startUp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Main.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/MenuFactory.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/MenuFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Game.java" afterPath="$PROJECT_DIR$/src/GAME/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Main.java" afterPath="$PROJECT_DIR$/src/GAME/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Menu/MainMenu.java" afterPath="$PROJECT_DIR$/src/GAME/Menu/MainMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Menu/MenuFactory.java" afterPath="$PROJECT_DIR$/src/GAME/Menu/MenuFactory.java" />
+    </list>
     <ignored path="TheSlightyLargerRPG.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/GAME/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,98 +50,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassDiagram.uml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GAME/ClassDiagram.uml">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement />
-              <nodes>
-                <node x="4.25" y="435.0">GAME.MapGenerator.Coord</node>
-                <node x="372.0" y="595.0">GAME.Game</node>
-                <node x="537.5" y="0.0">GAME.Entity</node>
-                <node x="151.25" y="408.0">GAME.MapGenerator.Room</node>
-                <node x="426.25" y="246.0">GAME.Player</node>
-                <node x="436.0" y="787.0">GAME.Game.Coord</node>
-                <node x="889.0" y="1001.0">GAME.Main</node>
-                <node x="672.0" y="706.0">GAME.Menu.Menu.MenuItem</node>
-                <node x="711.5" y="581.5">GAME.Menu.Menu</node>
-                <node x="0.0" y="881.5">GAME.Armor</node>
-                <node x="600.0" y="1001.0">GAME.Menu.MenuCallback</node>
-                <node x="423.0" y="1001.0">GAME.ConsolePrinter</node>
-                <node x="0.0" y="0.0">GAME.MapGenerator</node>
-                <node x="774.0" y="1001.0">GAME.Input</node>
-                <node x="98.0" y="841.0">GAME.Weapon</node>
-                <node x="0.0" y="1001.0">GAME.Quest</node>
-                <node x="665.25" y="273.0">GAME.Creature</node>
-                <node x="983.0" y="595.0">GAME.WeaponType</node>
-                <node x="9.25" y="595.0">GAME.Item</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="GAME.Armor" target="GAME.Item">
-                  <point x="0.0" y="-17.0" />
-                  <point x="39.0" y="816.0" />
-                  <point x="67.5" y="816.0" />
-                  <point x="-58.25" y="98.0" />
-                </edge>
-                <edge source="GAME.Creature" target="GAME.Entity">
-                  <point x="0.0" y="-30.5" />
-                  <point x="778.25" y="221.0" />
-                  <point x="716.75" y="221.0" />
-                  <point x="59.75" y="98.0" />
-                </edge>
-                <edge source="GAME.Game.Coord" target="GAME.Game">
-                  <point x="0.0" y="-44.0" />
-                  <point x="0.0" y="71.0" />
-                </edge>
-                <edge source="GAME.MapGenerator.Room" target="GAME.MapGenerator">
-                  <point x="0.0" y="-71.0" />
-                  <point x="266.25" y="383.0" />
-                  <point x="250.5" y="383.0" />
-                  <point x="83.5" y="179.0" />
-                </edge>
-                <edge source="GAME.MapGenerator.Coord" target="GAME.MapGenerator">
-                  <point x="0.0" y="-44.0" />
-                  <point x="67.75" y="383.0" />
-                  <point x="83.5" y="383.0" />
-                  <point x="-83.5" y="179.0" />
-                </edge>
-                <edge source="GAME.Menu.Menu.MenuItem" target="GAME.Menu.Menu">
-                  <point x="0.0" y="-44.0" />
-                  <point x="0.0" y="30.5" />
-                </edge>
-                <edge source="GAME.Weapon" target="GAME.Item">
-                  <point x="0.0" y="-57.5" />
-                  <point x="212.5" y="816.0" />
-                  <point x="184.0" y="816.0" />
-                  <point x="58.25" y="98.0" />
-                </edge>
-                <edge source="GAME.Player" target="GAME.Entity">
-                  <point x="0.0" y="-57.5" />
-                  <point x="535.75" y="221.0" />
-                  <point x="597.25" y="221.0" />
-                  <point x="-59.75" y="98.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.7054347826086959" x="-182.7842835130972" y="181.2157164869028" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Inner Classes</Category>
-                <Category>Properties</Category>
-                <Category>Fields</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+      <file leaf-file-name="SaveGameMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuCallback.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GAME/Menu/MenuCallback.java">
+      <file leaf-file-name="LoadGameMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Menu/LoadGameMenu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -145,30 +80,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GAME/Menu/Menu.java">
+      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Menu/MainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#209#219#0" expanded="true" />
-                <element signature="e#713#714#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#634#635#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GAME/Menu/MainMenu.java">
+      <file leaf-file-name="NewGameMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25404158">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -177,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/src/GAME/Menu/MenuFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -187,7 +117,27 @@
         <entry file="file://$PROJECT_DIR$/src/GAME/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="57" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="57" />
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Input.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Input.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4064665">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StartUp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/StartUp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -219,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/GAME/ConsolePrinter.java" />
         <option value="$PROJECT_DIR$/src/GAME/MapGenerator.java" />
         <option value="$PROJECT_DIR$/src/GAME/MenuCallback.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Game.java" />
         <option value="$PROJECT_DIR$/src/GAME/Entity.java" />
         <option value="$PROJECT_DIR$/src/GAME/Item.java" />
         <option value="$PROJECT_DIR$/src/GAME/Quest.java" />
@@ -232,9 +181,16 @@
         <option value="$PROJECT_DIR$/src/GAME/MenuHelper.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/Mainmenu.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Menu/MenuFactory.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/Menu.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Menu/MenuFactory.java" />
+        <option value="$PROJECT_DIR$/src/GAME/startUp.java" />
+        <option value="$PROJECT_DIR$/src/GAME/StartUp.java" />
         <option value="$PROJECT_DIR$/src/GAME/Main.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Menu/LoadGameMenu.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Menu/MainMenu.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Game.java" />
       </list>
     </option>
   </component>
@@ -795,12 +751,12 @@
       <option name="number" value="Default" />
       <updated>1456221245394</updated>
       <workItem from="1456221248313" duration="49532000" />
-      <workItem from="1456338330688" duration="24427000" />
+      <workItem from="1456338330688" duration="26184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73959000" />
+    <option name="totallyTimeSpent" value="75716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1918" height="1030" extended-state="6" />
@@ -813,7 +769,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.971079" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="2141" y="65" width="1050" height="253" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.971079" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="2141" y="65" width="1050" height="253" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -877,14 +833,6 @@
             <element signature="e#4654#4655#0" expanded="true" />
             <element signature="e#4720#4721#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,14 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="57" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GAME/ClassDiagram.uml">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1113,14 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Combat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GAME/Menu/MenuCallback.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1142,10 +1074,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Combat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/StartUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GAME/Menu/MenuFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/LoadGameMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1153,7 +1125,7 @@
     <entry file="file://$PROJECT_DIR$/src/GAME/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1162,12 +1134,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GAME/Menu/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25404158">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding>
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Input.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4064665">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

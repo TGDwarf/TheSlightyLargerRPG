@@ -12,11 +12,6 @@ public class Game {
 
     public void startUp() {
 
-
-        consolePrinter.printLogo();
-
-        consolePrinter.printStartInfo();
-
         consolePrinter.clearScreen();
 
         mapGenerator.Start();

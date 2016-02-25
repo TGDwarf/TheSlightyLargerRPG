@@ -8,6 +8,8 @@ public class MenuFactory {
         switch (menu){
             case "main":
                 return new MainMenu();
+            case "new":
+                return new NewGameMenu();
             case "save":
                 System.out.println("1");
                 break;
