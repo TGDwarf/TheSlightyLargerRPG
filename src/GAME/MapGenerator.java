@@ -1,19 +1,28 @@
 package GAME;
 
+import java.awt.*;
 import java.util.*;
+import java.util.List;
 
 /**
  * Created by dot on 23-02-2016.
  */
 public class MapGenerator {
 
+    ConsolePrinter consolePrinter = new ConsolePrinter();
+
     public int width = 200;
     public int height = 70;
+
+    public int getBorderSize() {
+        return borderSize;
+    }
+
     /*Bordersize og Playerviewfield SKAL pt være ens da man ellers risikere at få out of bounds exception
-    På sigt skal draw player view ændres til at udfylde "tomt" kort med væg,
-    pt ingen anelse pt hvordan jeg gør, dette er den midlertidige løsning */
-    public int borderSize = 8; // OBS
-    public int playerViewField = 8; // OBS
+        På sigt skal draw player view ændres til at udfylde "tomt" kort med væg,
+        pt ingen anelse pt hvordan jeg gør, dette er den midlertidige løsning */
+    public int borderSize = 14; // OBS
+    public int playerViewField = 14; // OBS
 
     public String seed = "Daniel";
     public Boolean useRandomSeed = false;
@@ -23,9 +32,9 @@ public class MapGenerator {
     int[][] preBorderedMap;
     int[][] borderedMap;
 
-    Coord playerStartingLocation;
+    Point playerStartingLocation;
 
-    List<List<Coord>> regions;
+    List<List<Point>> regions;
 
     void Start() {
         GenerateMap();
@@ -35,19 +44,16 @@ public class MapGenerator {
         map = new int[width][height];
         RandomFillMap();
 
-        for (int i = 0; i < 5; i ++) {
+        for (int i = 0; i < 5; i++) {
             SmoothMap();
         }
 
-        ProcessMap ();
-
+        ProcessMap();
 
 
         preBorderedMap = map;
 
         determinePlayerStartingPosition();
-
-        preBorderedMap[playerStartingLocation.tileX][playerStartingLocation.tileY] = 5;
 
         borderedMap = new int[width + borderSize * 2][height + borderSize * 2];
 
@@ -55,8 +61,7 @@ public class MapGenerator {
             for (int y = 0; y < borderedMap[x].length; y++) {
                 if (x >= borderSize && x < width - borderSize && y >= borderSize && y < height - borderSize) {
                     borderedMap[x][y] = preBorderedMap[x - borderSize][y - borderSize];
-                }
-                else {
+                } else {
                     borderedMap[x][y] = 1;
                 }
             }
@@ -64,29 +69,28 @@ public class MapGenerator {
     }
 
     void ProcessMap() {
-        List<List<Coord>> wallRegions = GetRegions (1);
+        List<List<Point>> wallRegions = GetRegions(1);
         int wallThresholdSize = 50;
 
-        for (List<Coord> wallRegion : wallRegions) {
+        for (List<Point> wallRegion : wallRegions) {
             if (wallRegion.size() < wallThresholdSize) {
-                for (Coord tile : wallRegion) {
-                    map[tile.tileX][tile.tileY] = 0;
+                for (Point tile : wallRegion) {
+                    map[tile.x][tile.y] = 0;
                 }
             }
         }
 
-        List<List<Coord>> roomRegions = GetRegions (0);
+        List<List<Point>> roomRegions = GetRegions(0);
         int roomThresholdSize = 50;
         List<Room> survivingRooms = new ArrayList<Room>();
 
 
-        for (List<Coord> roomRegion : roomRegions) {
+        for (List<Point> roomRegion : roomRegions) {
             if (roomRegion.size() < roomThresholdSize) {
-                for (Coord tile : roomRegion) {
-                    map[tile.tileX][tile.tileY] = 1;
+                for (Point tile : roomRegion) {
+                    map[tile.x][tile.y] = 1;
                 }
-            }
-            else {
+            } else {
                 survivingRooms.add(new Room(roomRegion, map));
             }
         }
@@ -94,22 +98,22 @@ public class MapGenerator {
         ConnectClosestRooms(survivingRooms);
     }
 
-    void ConnectClosestRooms(List<Room> allRooms){
+    void ConnectClosestRooms(List<Room> allRooms) {
 
     }
 
-    List<List<Coord>> GetRegions(int tileType) {
-        regions = new ArrayList<List<Coord>>();
+    List<List<Point>> GetRegions(int tileType) {
+        regions = new ArrayList<List<Point>>();
         int[][] mapFlags = new int[width][height];
 
-        for (int x = 0; x < width; x ++) {
-            for (int y = 0; y < height; y ++) {
+        for (int x = 0; x < width; x++) {
+            for (int y = 0; y < height; y++) {
                 if (mapFlags[x][y] == 0 && map[x][y] == tileType) {
-                    List<Coord> newRegion = GetRegionTiles(x,y);
+                    List<Point> newRegion = GetRegionTiles(x, y);
                     regions.add(newRegion);
 
-                    for (Coord tile : newRegion) {
-                        mapFlags[tile.tileX][tile.tileY] = 1;
+                    for (Point tile : newRegion) {
+                        mapFlags[tile.x][tile.y] = 1;
                     }
                 }
             }
@@ -118,25 +122,25 @@ public class MapGenerator {
         return regions;
     }
 
-    List<Coord> GetRegionTiles(int startX, int startY) {
-        List<Coord> tiles = new ArrayList<Coord> ();
+    List<Point> GetRegionTiles(int startX, int startY) {
+        List<Point> tiles = new ArrayList<Point>();
         int[][] mapFlags = new int[width][height];
-        int tileType = map [startX][startY];
+        int tileType = map[startX][startY];
 
-        LinkedList<Coord> queue = new LinkedList<Coord> ();
-        queue.add (new Coord (startX, startY));
-        mapFlags [startX][startY] = 1;
+        LinkedList<Point> queue = new LinkedList<Point>();
+        queue.add(new Point(startX, startY));
+        mapFlags[startX][startY] = 1;
 
         while (queue.size() > 0) {
-            Coord tile = queue.remove();
+            Point tile = queue.remove();
             tiles.add(tile);
 
-            for (int x = tile.tileX - 1; x <= tile.tileX + 1; x++) {
-                for (int y = tile.tileY - 1; y <= tile.tileY + 1; y++) {
-                    if (IsInMapRange(x,y) && (y == tile.tileY || x == tile.tileX)) {
+            for (int x = tile.x - 1; x <= tile.x + 1; x++) {
+                for (int y = tile.y - 1; y <= tile.y + 1; y++) {
+                    if (IsInMapRange(x, y) && (y == tile.y || x == tile.x)) {
                         if (mapFlags[x][y] == 0 && map[x][y] == tileType) {
                             mapFlags[x][y] = 1;
-                            queue.add(new Coord(x,y));
+                            queue.add(new Point(x, y));
                         }
                     }
                 }
@@ -147,7 +151,7 @@ public class MapGenerator {
     }
 
 
-    public List<List<Coord>> SortRegionsBySize() {
+    public List<List<Point>> SortRegionsBySize() {
 
         Collections.sort(regions, new Comparator<List>() {
             public int compare(List list2, List list1) {
@@ -174,22 +178,21 @@ public class MapGenerator {
 
         Random pseudoRandom = new Random((seed.hashCode()));
 
-        for (int x = 0; x < width; x ++) {
-            for (int y = 0; y < height; y ++) {
-                if (x == 0 || x == width-1 || y == 0 || y == height -1) {
+        for (int x = 0; x < width; x++) {
+            for (int y = 0; y < height; y++) {
+                if (x == 0 || x == width - 1 || y == 0 || y == height - 1) {
                     map[x][y] = 1;
-                }
-                else {
-                    map[x][y] = (pseudoRandom.nextInt(100) < randomFillPercent)? 1: 0;
+                } else {
+                    map[x][y] = (pseudoRandom.nextInt(100) < randomFillPercent) ? 1 : 0;
                 }
             }
         }
     }
 
     void SmoothMap() {
-        for (int x = 0; x < width; x ++) {
-            for (int y = 0; y < height; y ++) {
-                int neighbourWallTiles = GetSurroundingWallCount(x,y);
+        for (int x = 0; x < width; x++) {
+            for (int y = 0; y < height; y++) {
+                int neighbourWallTiles = GetSurroundingWallCount(x, y);
 
                 if (neighbourWallTiles > 4)
                     map[x][y] = 1;
@@ -202,15 +205,14 @@ public class MapGenerator {
 
     int GetSurroundingWallCount(int gridX, int gridY) {
         int wallCount = 0;
-        for (int neighbourX = gridX - 1; neighbourX <= gridX + 1; neighbourX ++) {
-            for (int neighbourY = gridY - 1; neighbourY <= gridY + 1; neighbourY ++) {
-                if (IsInMapRange(neighbourX,neighbourY)) {
+        for (int neighbourX = gridX - 1; neighbourX <= gridX + 1; neighbourX++) {
+            for (int neighbourY = gridY - 1; neighbourY <= gridY + 1; neighbourY++) {
+                if (IsInMapRange(neighbourX, neighbourY)) {
                     if (neighbourX != gridX || neighbourY != gridY) {
                         wallCount += map[neighbourX][neighbourY];
                     }
-                }
-                else {
-                    wallCount ++;
+                } else {
+                    wallCount++;
                 }
             }
         }
@@ -219,7 +221,7 @@ public class MapGenerator {
     }
 
     public void printRegionList() {
-        List<List<Coord>> sortedRegionsBySize;
+        List<List<Point>> sortedRegionsBySize;
         sortedRegionsBySize = SortRegionsBySize();
 
         System.out.print(regions);
@@ -228,28 +230,14 @@ public class MapGenerator {
     }
 
     void determinePlayerStartingPosition() {
-        List<List<Coord>> sortedRegionsBySize;
+        List<List<Point>> sortedRegionsBySize;
         sortedRegionsBySize = SortRegionsBySize();
         playerStartingLocation = sortedRegionsBySize.remove(0).remove(0);
     }
 
-
-    /**
-     * A java version of struct containing simple Coord information
-     */
-    final class Coord {
-        public int tileX;
-        public int tileY;
-
-        public Coord(int x, int y) {
-            tileX = x;
-            tileY = y;
-        }
-    }
-
     class Room {
-        public List<Coord> tiles;
-        public List<Coord> edgeTiles;
+        public List<Point> tiles;
+        public List<Point> edgeTiles;
         public List<Room> connectedRooms;
         public int roomSize;
 
@@ -257,16 +245,16 @@ public class MapGenerator {
 
         }
 
-        public Room(List<Coord> roomTiles, int[][] map){
+        public Room(List<Point> roomTiles, int[][] map) {
             tiles = roomTiles;
             roomSize = tiles.size();
             connectedRooms = new ArrayList<Room>();
 
-            edgeTiles = new ArrayList<Coord>();
-            for (Coord tile : tiles){
-                for (int x = tile.tileX-1; x <= tile.tileX; x++) {
-                    for (int y = tile.tileY-1; y <= tile.tileY+1; y++) {
-                        if (x == tile.tileX || y == tile.tileY) {
+            edgeTiles = new ArrayList<Point>();
+            for (Point tile : tiles) {
+                for (int x = tile.x - 1; x <= tile.x; x++) {
+                    for (int y = tile.y - 1; y <= tile.y + 1; y++) {
+                        if (x == tile.x || y == tile.y) {
                             if (map[x][y] == 1) {
                                 edgeTiles.add(tile);
                             }
@@ -294,23 +282,28 @@ public class MapGenerator {
      */
     void DrawWorldMap() {
         if (map != null) {
-            for (int y = 0; y < height; y ++) {
-                for (int x = 0; x < width; x ++) {
-                    System.out.print(borderedMap [x][y]);
+            for (int y = 0; y < height; y++) {
+                for (int x = 0; x < width; x++) {
+                    System.out.print(borderedMap[x][y]);
                 }
                 System.out.println("");
             }
         }
     }
 
-    void DrawPlayerMap(Coord playerLocation) {
-        for (int y = playerLocation.tileY - playerViewField; y <= playerLocation.tileY + playerViewField; y++) {
-            for (int x = playerLocation.tileX - playerViewField; x <= playerLocation.tileX + playerViewField; x++) {
-                if (IsInMapRange(playerLocation.tileX,playerLocation.tileY)) {
-                    System.out.print(borderedMap[x+borderSize][y+borderSize]);}
+    void DrawPlayerMap(Point playerLocation) {
+        consolePrinter.clearScreen();
+        borderedMap[playerLocation.x+borderSize][playerLocation.y+borderSize] = 5;
+        for (int y = playerLocation.y - playerViewField; y <= playerLocation.y + playerViewField; y++) {
+            for (int x = playerLocation.x - playerViewField; x <= playerLocation.x + playerViewField; x++) {
+                if (IsInMapRange(playerLocation.x, playerLocation.y)) {
+                    consolePrinter.printMap(borderedMap[x + borderSize][y + borderSize]);
+                }
+
             }
             System.out.println("");
         }
+        borderedMap[playerLocation.x + borderSize][playerLocation.y + borderSize] = 0;
     }
 }
 

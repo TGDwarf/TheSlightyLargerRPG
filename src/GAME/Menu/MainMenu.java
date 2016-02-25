@@ -6,21 +6,20 @@ import GAME.Game;
  * Created by dot on 25-02-2016.
  */
 public class MainMenu extends Menu {
-    public MainMenu() {
+    public MainMenu(Menu newGameMenu, Menu saveGameMenu, Menu loadGameMenu) {
         this.Add("New Game", new MenuCallback() {
             public void Invoke() {
-                Game game = new Game();
-                game.startUp();
+                newGameMenu.Show();
             }
         });
         this.Add("Save Game", new MenuCallback() {
             public void Invoke() {
-
+                saveGameMenu.Show();
             }
         });
         this.Add("Load Game", new MenuCallback() {
             public void Invoke() {
-
+                loadGameMenu.Show();
             }
         });
         this.Add("Quit Game", new MenuCallback() {

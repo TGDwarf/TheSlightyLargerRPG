@@ -7,18 +7,15 @@ public class MenuFactory {
     public Menu getMenu(String menu){
         switch (menu){
             case "main":
-                return new MainMenu();
+                return new MainMenu(this.getMenu("new"), this.getMenu("save"), this.getMenu("load"));
             case "new":
                 return new NewGameMenu();
             case "save":
-                System.out.println("1");
-                break;
+                return new SaveGameMenu();
             case "load":
-                System.out.println("1");
-                break;
+                return new LoadGameMenu();
             case "battle":
-                System.out.println("1");
-                break;
+                return new BattleMenu();
         }
         return null;
     }
