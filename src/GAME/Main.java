@@ -1,12 +1,17 @@
 package GAME;
 
+import GAME.Menu.Menu;
+import GAME.Menu.MenuFactory;
+
 public class Main {
 
 
     public static void main(String[] args) {
+        MenuFactory menuFactory = new MenuFactory();
 
-        Game game = new Game();
-        game.startUp();
+
+        Menu menu = menuFactory.getMenu("main");
+        menu.Show();
 
     }
 }

@@ -21,25 +21,7 @@ public class Game {
 
         mapGenerator.Start();
 
-        Menu menu = new Menu();
-        menu.Add("List contacts", new MenuCallback() {
-            public void Invoke() {
-                // Do something
-                consolePrinter.print("Hello");
-            }
-        });
-        menu.Add("Add contact", new MenuCallback() {
-            public void Invoke() {
-                // Do Something
-            }
-        });
-        menu.Add("Quit", new MenuCallback() {
-                    public void Invoke() {
-                        System.exit(0);
-                    }
-        });
 
-        menu.Show();
 
         //mapGenerator.printRegionList();
         //mapGenerator.DrawWorldMap();

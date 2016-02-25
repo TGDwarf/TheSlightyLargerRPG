@@ -1,5 +1,7 @@
-package GAME;
+package GAME.Menu;
 
+
+import GAME.Game;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -60,5 +62,4 @@ public class Menu {
             menuCallback.Invoke();
         }
     }
-
 }

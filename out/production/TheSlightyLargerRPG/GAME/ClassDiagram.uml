@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="622.0">GAME.Game</node>
+    <node x="326.0" y="516.0">GAME.MapGenerator.Coord</node>
+    <node x="0.0" y="489.0">GAME.MapGenerator.Room</node>
+    <node x="45.0" y="760.0">GAME.Game.Coord</node>
+    <node x="0.0" y="839.0">GAME.Main</node>
+    <node x="531.75" y="138.0">GAME.Menu.MenuItem</node>
+    <node x="508.75" y="0.0">GAME.Menu</node>
+    <node x="226.0" y="839.0">GAME.MenuCallback</node>
+    <node x="212.0" y="622.0">GAME.ConsolePrinter</node>
+    <node x="53.75" y="0.0">GAME.MapGenerator</node>
+    <node x="486.0" y="622.0">GAME.Input</node>
+    <node x="760.0" y="622.0">GAME.MenuHelper</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="GAME.Game.Coord" target="GAME.Game">
+      <point x="0.0" y="-17.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="GAME.Menu.MenuItem" target="GAME.Menu">
+      <point x="0.0" y="-44.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="GAME.MapGenerator.Room" target="GAME.MapGenerator">
+      <point x="0.0" y="-44.0" />
+      <point x="153.0" y="464.0" />
+      <point x="156.25" y="464.0" />
+      <point x="-102.5" y="219.5" />
+    </edge>
+    <edge source="GAME.MapGenerator.Coord" target="GAME.MapGenerator">
+      <point x="0.0" y="-17.0" />
+      <point x="364.5" y="464.0" />
+      <point x="361.25" y="464.0" />
+      <point x="102.5" y="219.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9054347826086957" x="471.8307322929171" y="410.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

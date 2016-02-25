@@ -1,4 +1,4 @@
-package GAME;
+package GAME.Menu;
 
 import java.util.EventListener;
 
