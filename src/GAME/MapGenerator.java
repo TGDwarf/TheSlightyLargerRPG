@@ -20,9 +20,10 @@ public class MapGenerator {
 
     /*Bordersize og Playerviewfield SKAL pt være ens da man ellers risikere at få out of bounds exception
         På sigt skal draw player view ændres til at udfylde "tomt" kort med væg,
-        pt ingen anelse pt hvordan jeg gør, dette er den midlertidige løsning */
+        pt ingen anelse hvordan jeg gør, dette er den midlertidige løsning */
     public int borderSize = 14; // OBS
     public int playerViewField = 14; // OBS
+    public int monsterDensity = 10;
 
     public String seed = "Daniel";
     public Boolean useRandomSeed = false;
@@ -33,6 +34,8 @@ public class MapGenerator {
     int[][] borderedMap;
 
     Point playerStartingLocation;
+
+    List<Point> creatureSpawnLocations = new ArrayList<>();
 
     List<List<Point>> regions;
 
@@ -53,7 +56,11 @@ public class MapGenerator {
 
         preBorderedMap = map;
 
+        makeSortedRegions();
+
         determinePlayerStartingPosition();
+
+        determineCreatureStartingPositions();
 
         borderedMap = new int[width + borderSize * 2][height + borderSize * 2];
 
@@ -66,6 +73,8 @@ public class MapGenerator {
                 }
             }
         }
+        //Place player in the new map
+        borderedMap[playerStartingLocation.x+borderSize][playerStartingLocation.y+borderSize] = 5;
     }
 
     void ProcessMap() {
@@ -151,15 +160,15 @@ public class MapGenerator {
     }
 
 
-    public List<List<Point>> SortRegionsBySize() {
+    public List<List<Point>> SortRegionsBySize(List<List<Point>> regionsToBeSorted) {
 
-        Collections.sort(regions, new Comparator<List>() {
+        Collections.sort(regionsToBeSorted, new Comparator<List>() {
             public int compare(List list2, List list1) {
                 return Integer.valueOf(list1.size()).compareTo(Integer.valueOf(list2.size()));
             }
         });
 
-        return regions;
+        return regionsToBeSorted;
 
     }
 
@@ -222,17 +231,38 @@ public class MapGenerator {
 
     public void printRegionList() {
         List<List<Point>> sortedRegionsBySize;
-        sortedRegionsBySize = SortRegionsBySize();
+        sortedRegionsBySize = SortRegionsBySize(regions);
 
         System.out.print(regions);
         System.out.println();
         System.out.print(sortedRegionsBySize);
     }
 
+    void makeSortedRegions(){
+        SortRegionsBySize(regions);
+    }
+
     void determinePlayerStartingPosition() {
-        List<List<Point>> sortedRegionsBySize;
-        sortedRegionsBySize = SortRegionsBySize();
-        playerStartingLocation = sortedRegionsBySize.remove(0).remove(0);
+        List<List<Point>> playerSortedRegions;
+        playerSortedRegions = regions;
+        playerStartingLocation = playerSortedRegions.get(0).get(0);
+
+    }
+
+    void determineCreatureStartingPositions() {
+        List<List<Point>> creatureSortedRegions;
+        creatureSortedRegions = regions;
+        List<Point> mainRegion = creatureSortedRegions.get(0);
+        int monsters = Math.round(monsterDensity * mainRegion.size() / 100);
+        Random rand = new Random();
+        for (int x = 0; x < monsters; x++) {
+
+            int randomNum = rand.nextInt((mainRegion.size() - 0)) + 0;
+            int i = 0;
+            Point creatureStartingLocation = mainRegion.get(randomNum);
+
+            creatureSpawnLocations.add(creatureStartingLocation);
+        }
     }
 
     class Room {
@@ -293,7 +323,7 @@ public class MapGenerator {
 
     void DrawPlayerMap(Point playerLocation) {
         consolePrinter.clearScreen();
-        borderedMap[playerLocation.x+borderSize][playerLocation.y+borderSize] = 5;
+
         for (int y = playerLocation.y - playerViewField; y <= playerLocation.y + playerViewField; y++) {
             for (int x = playerLocation.x - playerViewField; x <= playerLocation.x + playerViewField; x++) {
                 if (IsInMapRange(playerLocation.x, playerLocation.y)) {
@@ -303,7 +333,6 @@ public class MapGenerator {
             }
             System.out.println("");
         }
-        borderedMap[playerLocation.x + borderSize][playerLocation.y + borderSize] = 0;
     }
 }
 
