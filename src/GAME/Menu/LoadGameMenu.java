@@ -21,5 +21,10 @@ public class LoadGameMenu extends Menu {
                       }
                   });
         }*/
+        this.Add("Back to main menu", new MenuCallback() {
+            public void Invoke() {
+
+            }
+        });
     }
 }

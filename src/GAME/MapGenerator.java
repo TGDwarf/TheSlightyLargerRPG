@@ -11,7 +11,7 @@ public class MapGenerator {
 
     ConsolePrinter consolePrinter = new ConsolePrinter();
 
-    public int width = 200;
+    public int width = 150;
     public int height = 70;
 
     public int getBorderSize() {
@@ -23,8 +23,8 @@ public class MapGenerator {
         pt ingen anelse hvordan jeg gør, dette er den midlertidige løsning */
     public int borderSize = 14; // OBS
     public int playerViewField = 14; // OBS
-    public int monsterDensity = 10;
 
+    public int monsterDensity = 10;
     public String seed = "Daniel";
     public Boolean useRandomSeed = false;
     public int randomFillPercent = 49;
@@ -56,7 +56,7 @@ public class MapGenerator {
 
         preBorderedMap = map;
 
-        makeSortedRegions();
+        makeRegionsSorted();
 
         determinePlayerStartingPosition();
 
@@ -238,7 +238,7 @@ public class MapGenerator {
         System.out.print(sortedRegionsBySize);
     }
 
-    void makeSortedRegions(){
+    void makeRegionsSorted(){
         SortRegionsBySize(regions);
     }
 
@@ -258,7 +258,6 @@ public class MapGenerator {
         for (int x = 0; x < monsters; x++) {
 
             int randomNum = rand.nextInt((mainRegion.size() - 0)) + 0;
-            int i = 0;
             Point creatureStartingLocation = mainRegion.get(randomNum);
 
             creatureSpawnLocations.add(creatureStartingLocation);
@@ -333,6 +332,58 @@ public class MapGenerator {
             }
             System.out.println("");
         }
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public void setBorderSize(int borderSize) {
+        this.borderSize = borderSize;
+    }
+
+    public int getPlayerViewField() {
+        return playerViewField;
+    }
+
+    public void setPlayerViewField(int playerViewField) {
+        this.playerViewField = playerViewField;
+    }
+
+    public int getMonsterDensity() {
+        return monsterDensity;
+    }
+
+    public void setMonsterDensity(int monsterDensity) {
+        this.monsterDensity = monsterDensity;
+    }
+
+    public String getSeed() {
+        return seed;
+    }
+
+    public void setSeed(String seed) {
+        this.seed = seed;
+    }
+
+    public Boolean getUseRandomSeed() {
+        return useRandomSeed;
+    }
+
+    public void setUseRandomSeed(Boolean useRandomSeed) {
+        this.useRandomSeed = useRandomSeed;
     }
 }
 

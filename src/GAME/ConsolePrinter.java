@@ -1,7 +1,5 @@
 package GAME;
 
-import java.util.Map;
-
 /**
  * Created by dot on 25-02-2016.
  */
@@ -12,7 +10,7 @@ public class ConsolePrinter {
     }
 
     /**
-     * Clears the screen, for loop should be outcommented before release
+     * Clears the screen, for loop should be out-commented before release
      */
     public void clearScreen(){
         for (int i = 0; i < 30; i++)
@@ -56,6 +54,10 @@ public class ConsolePrinter {
         System.out.println("Here are your options:");
     }
 
+    /**
+     * prints a map texture depending on input
+     * @param mapTile int to Map Texture
+     */
     public void printMap(int mapTile) {
         switch (mapTile){
             case 0:
@@ -77,5 +79,16 @@ public class ConsolePrinter {
         }
 
 
+    }
+
+    /**
+     * Prints the help menu
+     */
+    public void printHelpMenu() {
+        System.out.println("Here are your options while in game traveling the map");
+        System.out.println("Type w / a / s / d to move in a direction");
+        System.out.println("To move in the same direction again simply hit enter");
+        System.out.println("Type t to enter the main menu again");
+        System.out.println("Type h to show this menu again");
     }
 }

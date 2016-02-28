@@ -12,7 +12,7 @@ public class Main {
 
         MenuFactory menuFactory = new MenuFactory();
 
-        Menu menu = menuFactory.getMenu("main");
+        Menu menu = menuFactory.getMenu("main", "first");
         menu.Show();
 
     }

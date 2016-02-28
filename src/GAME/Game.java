@@ -1,5 +1,8 @@
 package GAME;
 
+import GAME.Menu.MenuFactory;
+import GAME.Menu.Menu;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,14 +12,14 @@ import java.util.List;
  */
 public class Game {
 
+    //TODO: BIG FUCKING TODO. Change draw map to retrieve list of creatures / player / corpses etc and add them to the map right before drawing, removing all the adding of monster to the map from the code
     private boolean inMapMenu = true;
     private static String lastCommand;
+    int oldTexture = 0;
 
-    public MapGenerator getMapGenerator() {
-        return mapGenerator;
-    }
-
-    MapGenerator mapGenerator = new MapGenerator();
+    public MapGenerator mapGenerator = new MapGenerator();
+    MenuFactory menuFactory = new MenuFactory();
+    ConsolePrinter consolePrinter = new ConsolePrinter();
     Player player = new Player();
     Creature creature;
     List<Creature> creatures = new ArrayList<>();
@@ -39,8 +42,17 @@ public class Game {
 
         mapGenerator.DrawPlayerMap(player.getLocation());
         while(inMapMenu){
-            String playerMove = Input.getKeyboardInput();
-            movePlayer(playerMove);
+            String playerCommand = Input.inGameGetKeyboardInput();
+            if (playerCommand.equals("") && lastCommand != null || playerCommand.equals("w") || playerCommand.equals("a") || playerCommand.equals("s") || playerCommand.equals("d")){
+                movePlayer(playerCommand);
+            }
+            if (playerCommand.equals("t") ){
+                Menu menu = menuFactory.getMenu("main", "ingame");
+                menu.Show();
+            }
+            if (playerCommand.equals("h") ){
+                consolePrinter.printHelpMenu();
+            }
         }
 
     }
@@ -78,48 +90,48 @@ public class Game {
                 destination.x = player.getLocation().x;
                 destination.y = player.getLocation().y-1;
                 if (isValidMove(destination)){
-                    playerLocationMapTextureUpdate(0);
+                    playerLocationMapTextureUpdate(oldTexture);
                     player.getLocation().y --;
+                    oldTexture = mapGenerator.borderedMap[player.getLocation().x+mapGenerator.borderSize][player.getLocation().y+mapGenerator.borderSize];
                     playerLocationMapTextureUpdate(5);
                 }
                 mapGenerator.DrawPlayerMap(player.getLocation());
-                //movePlayer(hero, new Point(0, -1));
                 break;
 
             case 's':
                 destination.x = player.getLocation().x;
                 destination.y = player.getLocation().y+1;
                 if (isValidMove(destination)){
-                    playerLocationMapTextureUpdate(0);
+                    playerLocationMapTextureUpdate(oldTexture);
                     player.getLocation().y ++;
+                    oldTexture = mapGenerator.borderedMap[player.getLocation().x+mapGenerator.borderSize][player.getLocation().y+mapGenerator.borderSize];
                     playerLocationMapTextureUpdate(5);
                 }
                 mapGenerator.DrawPlayerMap(player.getLocation());
-                //movePlayer(hero, new Point(0, 1));
                 break;
 
             case 'a':
                 destination.x = player.getLocation().x-1;
                 destination.y = player.getLocation().y;
                 if (isValidMove(destination)){
-                    playerLocationMapTextureUpdate(0);
+                    playerLocationMapTextureUpdate(oldTexture);
                     player.getLocation().x --;
+                    oldTexture = mapGenerator.borderedMap[player.getLocation().x+mapGenerator.borderSize][player.getLocation().y+mapGenerator.borderSize];
                     playerLocationMapTextureUpdate(5);
                 }
                 mapGenerator.DrawPlayerMap(player.getLocation());
-                //movePlayer(hero, new Point(-1, 0));
                 break;
 
             case 'd':
                 destination.x = player.getLocation().x+1;
                 destination.y = player.getLocation().y;
                 if (isValidMove(destination)){
-                    playerLocationMapTextureUpdate(0);
+                    playerLocationMapTextureUpdate(oldTexture);
                     player.getLocation().x ++;
+                    oldTexture = mapGenerator.borderedMap[player.getLocation().x+mapGenerator.borderSize][player.getLocation().y+mapGenerator.borderSize];
                     playerLocationMapTextureUpdate(5);
                 }
                 mapGenerator.DrawPlayerMap(player.getLocation());
-                //movePlayer(hero, new Point(1, 0));
                 break;
         }
 
