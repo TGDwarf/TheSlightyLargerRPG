@@ -21,6 +21,7 @@ public class Game {
     MenuFactory menuFactory = new MenuFactory();
     ConsolePrinter consolePrinter = new ConsolePrinter();
     Player player = new Player();
+    Input input = new Input();
     Creature creature;
     List<Creature> creatures = new ArrayList<>();
 
@@ -42,13 +43,14 @@ public class Game {
 
         mapGenerator.DrawPlayerMap(player.getLocation());
         while(inMapMenu){
-            String playerCommand = Input.inGameGetKeyboardInput();
+            String playerCommand = input.inGameGetKeyboardInput();
             if (playerCommand.equals("") && lastCommand != null || playerCommand.equals("w") || playerCommand.equals("a") || playerCommand.equals("s") || playerCommand.equals("d")){
                 movePlayer(playerCommand);
             }
             if (playerCommand.equals("t") ){
-                Menu menu = menuFactory.getMenu("main", "ingame");
+                Menu menu = menuFactory.getMenu("main", this);
                 menu.Show();
+                mapGenerator.DrawPlayerMap(player.getLocation());
             }
             if (playerCommand.equals("h") ){
                 consolePrinter.printHelpMenu();

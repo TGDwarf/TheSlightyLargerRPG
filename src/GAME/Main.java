@@ -9,10 +9,11 @@ public class Main {
 
         StartUp startUp = new StartUp();
         startUp.startUp();
+        Game game = null;
 
         MenuFactory menuFactory = new MenuFactory();
 
-        Menu menu = menuFactory.getMenu("main", "first");
+        Menu menu = menuFactory.getMenu("main", game);
         menu.Show();
 
     }
