@@ -9,7 +9,7 @@ import GAME.Input;
  */
 public class NewGameMenu extends Menu {
 
-   Input input = new Input();
+    Input input = new Input();
     Game game = new Game();
     int gameWidth = game.mapGenerator.getWidth();
     int gameHeight = game.mapGenerator.getHeight();
@@ -18,6 +18,33 @@ public class NewGameMenu extends Menu {
     String gameSeed = game.mapGenerator.getSeed();
     boolean gameSeedRandom = game.mapGenerator.getUseRandomSeed();
 
+    private boolean settingsAccepted = false;
+
+    @Override
+    public void Show() {
+        while (!settingsAccepted) {
+            int chosen = 0;
+            for (int i = 0; i < getItems().size(); ++i) {
+                MenuItem menuItem = getItems().get(i);
+                System.out.printf("[%d] %s \n", i + 1, menuItem.getText());
+            }
+
+            System.out.println();
+
+            chosen = input.menuGetIntKeyboardInput();
+
+            if (chosen > getItems().size() || chosen < 1) {
+                System.out.println("Invalid option.\nPress enter to continue...");
+                input.menuGetKeyboardInput();
+                input.menuGetKeyboardInput();
+            } else {
+                MenuItem menuItem = getItems().get(chosen - 1);
+                MenuCallback menuCallback = menuItem.getMenuCallback();
+                menuCallback.Invoke();
+            }
+        }
+    }
+
     public NewGameMenu() {
         this.Add("Accept settings and start game", new MenuCallback() {
             public void Invoke() {
@@ -25,7 +52,17 @@ public class NewGameMenu extends Menu {
                 game.startUp();
             }
         });
-        this.Add("Map Width - Current width = " + gameWidth, new MenuCallback() {
+        this.Add("Please enter a player name - Default Name = " + game.getPlayerName(), new MenuCallback() {
+            public void Invoke() {
+                try {
+                    game.setPlayerName(input.menuGetKeyboardInput());
+                } catch (NumberFormatException e) {
+
+                }
+                //TODO: Call up the menu again
+            }
+        });
+        this.Add("Map Width - Default width = " + gameWidth, new MenuCallback() {
             public void Invoke() {
                 try {
                     gameWidth = Integer.parseInt(input.menuGetKeyboardInput());
@@ -36,7 +73,7 @@ public class NewGameMenu extends Menu {
                 //TODO: Call up the menu again
             }
         });
-        this.Add("Map Height - Current Height = " + gameHeight, new MenuCallback() {
+        this.Add("Map Height - Default Height = " + gameHeight, new MenuCallback() {
             public void Invoke() {
                 try {
                     gameHeight = Integer.parseInt(input.menuGetKeyboardInput());
@@ -47,7 +84,7 @@ public class NewGameMenu extends Menu {
                 //TODO: Call up the menu again
             }
         });
-        this.Add("Player View Distance (Recommend 3-15) - Current = " + gamePlayerViewField, new MenuCallback() {
+        this.Add("Player View Distance (Recommend 3-15) - Default = " + gamePlayerViewField, new MenuCallback() {
             public void Invoke() {
                 try {
                     gamePlayerViewField = Integer.parseInt(input.menuGetKeyboardInput());
@@ -59,7 +96,7 @@ public class NewGameMenu extends Menu {
                 //TODO: Call up the menu again
             }
         });
-        this.Add("Monster density (Recommend 1-10) - Current = " + gameMonsterDensity, new MenuCallback() {
+        this.Add("Monster density (Recommend 1-10) - Default = " + gameMonsterDensity, new MenuCallback() {
             public void Invoke() {
                 try {
                     gameMonsterDensity = Integer.parseInt(input.menuGetKeyboardInput());
@@ -70,20 +107,20 @@ public class NewGameMenu extends Menu {
                 //TODO: Call up the menu again
             }
         });
-        this.Add("Map seed - Current = " + gameSeed, new MenuCallback() {
+        this.Add("Map seed - Default = " + gameSeed, new MenuCallback() {
             public void Invoke() {
                 gameSeed = input.menuGetKeyboardInput();
                 game.mapGenerator.setSeed(gameSeed);
                 //TODO: Call up the menu again
             }
         });
-        this.Add("Use random game seed, enter true or false - Current = " + gameSeedRandom, new MenuCallback() {
+        this.Add("Use random game seed, enter true or false - Default = " + gameSeedRandom, new MenuCallback() {
             public void Invoke() {
                 try {
-                    if (Input.menuGetKeyboardInput() == "true") {
+                    if (input.menuGetKeyboardInput() == "true") {
                         gameSeedRandom = true;
                     }
-                    if (Input.menuGetKeyboardInput() == "false"){
+                    if (input.menuGetKeyboardInput() == "false"){
                         gameSeedRandom = false;
                     }
 

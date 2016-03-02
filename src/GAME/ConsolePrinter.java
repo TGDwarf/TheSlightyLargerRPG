@@ -66,8 +66,14 @@ public class ConsolePrinter {
             case 1:
                 System.out.print(IMapTextures.wallTexture);
                 break;
+            case 2:
+                System.out.print(IMapTextures.corpseTexture);
+                break;
             case 3:
                 System.out.print(IMapTextures.monsterTexture);
+                break;
+            case 4:
+                System.out.print(IMapTextures.vendorTexture);
                 break;
             case 5:
                 System.out.print(IMapTextures.playerTexture);
@@ -90,5 +96,22 @@ public class ConsolePrinter {
         System.out.println("To move in the same direction again simply hit enter");
         System.out.println("Type t to enter the main menu again");
         System.out.println("Type h to show this menu again");
+        System.out.println("Type m to show this map info");
+    }
+
+    public void gameoverScreen(){
+        // Failure Screen
+        System.out.println("The game is over, you lost... maybe try again?");
+        System.out.println();
+    }
+
+    public void printMapInfo(){
+        System.out.println("floorTexture = \" \"");
+        System.out.println("wallTexture = \"X\"");
+        System.out.println("monsterTexture = \"M\"");
+        System.out.println("monsterTexture = \"C\"");
+        System.out.println("vendorTexture = \"V\"");
+        System.out.println("playerTexture = \"P\"");
+        System.out.println("fightTexture = \"F\"");
     }
 }

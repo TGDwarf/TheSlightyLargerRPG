@@ -4,6 +4,7 @@ import GAME.Menu.MenuFactory;
 import GAME.Menu.Menu;
 
 import java.awt.*;
+import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,11 +17,22 @@ public class Game {
     private boolean inMapMenu = true;
     private static String lastCommand;
     int oldTexture = 0;
+    int playerLevel = 1;
+
+    public String getPlayerName() {
+        return playerName;
+    }
+
+    public void setPlayerName(String playerName) {
+        this.playerName = playerName;
+    }
+
+    private String playerName = "Default";
 
     public MapGenerator mapGenerator = new MapGenerator();
     MenuFactory menuFactory = new MenuFactory();
     ConsolePrinter consolePrinter = new ConsolePrinter();
-    Player player = new Player();
+    Player player = new Player(playerName, "the player", playerLevel, new Damage(WeaponTypes.Hands) );
     Input input = new Input();
     Creature creature;
     List<Creature> creatures = new ArrayList<>();
@@ -32,17 +44,14 @@ public class Game {
         mapGenerator.Start();
 
         //mapGenerator.printRegionList();
-        //mapGenerator.DrawWorldMap();
+        mapGenerator.DrawWorldMap();
         player.setLocation(mapGenerator.playerStartingLocation);
-        for (Point spawnPoint : mapGenerator.creatureSpawnLocations) {
-            creature = new Creature();
-            creature.setLocation(spawnPoint);
-            mapGenerator.borderedMap[creature.getLocation().x+mapGenerator.borderSize][creature.getLocation().y+mapGenerator.borderSize] = 3;
-            creatures.add(creature);
-        }
+        spawnCreatures();
 
         mapGenerator.DrawPlayerMap(player.getLocation());
+        consolePrinter.printMapInfo();
         while(inMapMenu){
+            //TODO: Insert creature move code call here
             String playerCommand = input.inGameGetKeyboardInput();
             if (playerCommand.equals("") && lastCommand != null || playerCommand.equals("w") || playerCommand.equals("a") || playerCommand.equals("s") || playerCommand.equals("d")){
                 movePlayer(playerCommand);
@@ -55,8 +64,31 @@ public class Game {
             if (playerCommand.equals("h") ){
                 consolePrinter.printHelpMenu();
             }
+            if (playerCommand.equals("m") ){
+                consolePrinter.printMapInfo();
+            }
+            if (playerCommand.equals("u") ){
+                player.setExperience(player.getExperience()+50);
+            }
+            player.endturnHeal();
+            if (player.getLevel() != (int)player.getExperience()/50+1){
+                player.setLevel((int)player.getExperience()/50+1);
+                player.setHealth_Max(player.calculateMaxHealth());
+            }
+
+
+            //TODO: Update highscore on sql server, Playername + Experience
         }
 
+    }
+
+    private void spawnCreatures(){
+        for (Point spawnPoint : mapGenerator.creatureSpawnLocations) {
+            creature = new Creature("Troll", "A hideous being with bad breath", playerLevel, new Damage(WeaponTypes.Hands));
+            creature.setLocation(spawnPoint);
+            mapGenerator.borderedMap[creature.getLocation().x+mapGenerator.borderSize][creature.getLocation().y+mapGenerator.borderSize] = 3;
+            creatures.add(creature);
+        }
     }
 
     private boolean isValidMove(Point destination){
@@ -73,25 +105,44 @@ public class Game {
         mapGenerator.borderedMap[player.getLocation().x+mapGenerator.borderSize][player.getLocation().y+mapGenerator.borderSize] = texture;
     }
 
-    private void movePlayer(String input)
+    private void checkForCombat(Point destination){
+        for (Creature creature : creatures) {
+            if (creature.getLocation().equals(destination)) {
+                if (creature.isAlive()){
+                    Combat combat = new Combat(player, creature);
+                    if (combat.getWinner().equals(player)){
+                        player.setExperience(player.getExperience() + creature.getHealth_Max());
+                        mapGenerator.borderedMap[creature.getLocation().x+mapGenerator.borderSize][creature.getLocation().y+mapGenerator.borderSize] = 2;
+                    }
+                    else {
+                        consolePrinter.gameoverScreen();
+                        System.exit(0);
+                    }
+                }
+            }
+        }
+    }
+
+    private void movePlayer(String playerInput)
     {
         Point destination = new Point();
 
-        if (input.length() == 0) {
-            input = lastCommand;
+        if (playerInput.length() == 0) {
+            playerInput = lastCommand;
         }
-        else if (input.toCharArray().length > 1) {
+        else if (playerInput.toCharArray().length > 1) {
             return;
         }
 
-        lastCommand = input;
+        lastCommand = playerInput;
 
-        switch (input.toCharArray()[0])
+        switch (playerInput.toCharArray()[0])
         {
             case 'w':
                 destination.x = player.getLocation().x;
                 destination.y = player.getLocation().y-1;
                 if (isValidMove(destination)){
+                    checkForCombat(destination);
                     playerLocationMapTextureUpdate(oldTexture);
                     player.getLocation().y --;
                     oldTexture = mapGenerator.borderedMap[player.getLocation().x+mapGenerator.borderSize][player.getLocation().y+mapGenerator.borderSize];
@@ -104,6 +155,7 @@ public class Game {
                 destination.x = player.getLocation().x;
                 destination.y = player.getLocation().y+1;
                 if (isValidMove(destination)){
+                    checkForCombat(destination);
                     playerLocationMapTextureUpdate(oldTexture);
                     player.getLocation().y ++;
                     oldTexture = mapGenerator.borderedMap[player.getLocation().x+mapGenerator.borderSize][player.getLocation().y+mapGenerator.borderSize];
@@ -116,6 +168,7 @@ public class Game {
                 destination.x = player.getLocation().x-1;
                 destination.y = player.getLocation().y;
                 if (isValidMove(destination)){
+                    checkForCombat(destination);
                     playerLocationMapTextureUpdate(oldTexture);
                     player.getLocation().x --;
                     oldTexture = mapGenerator.borderedMap[player.getLocation().x+mapGenerator.borderSize][player.getLocation().y+mapGenerator.borderSize];
@@ -128,6 +181,7 @@ public class Game {
                 destination.x = player.getLocation().x+1;
                 destination.y = player.getLocation().y;
                 if (isValidMove(destination)){
+                    checkForCombat(destination);
                     playerLocationMapTextureUpdate(oldTexture);
                     player.getLocation().x ++;
                     oldTexture = mapGenerator.borderedMap[player.getLocation().x+mapGenerator.borderSize][player.getLocation().y+mapGenerator.borderSize];

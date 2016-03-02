@@ -7,6 +7,11 @@ public class LoadGameMenu extends Menu {
     public LoadGameMenu() {
         //Method to search dir and find savefiles, store in loadFiles list
 
+        this.Add("Back to main menu", new MenuCallback() {
+            public void Invoke() {
+            }
+        });
+
         this.Add("Placeholder for load files", new MenuCallback() {
             public void Invoke() {
 
@@ -21,10 +26,6 @@ public class LoadGameMenu extends Menu {
                       }
                   });
         }*/
-        this.Add("Back to main menu", new MenuCallback() {
-            public void Invoke() {
 
-            }
-        });
     }
 }

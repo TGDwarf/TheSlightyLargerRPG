@@ -16,8 +16,6 @@ public class MenuFactory {
                 return new SaveGameMenu(game);
             case "load":
                 return new LoadGameMenu();
-            case "battle":
-                return new BattleMenu();
         }
         return null;
     }

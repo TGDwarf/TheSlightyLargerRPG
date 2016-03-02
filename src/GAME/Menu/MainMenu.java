@@ -6,8 +6,8 @@ import GAME.Game;
  * Created by dot on 25-02-2016.
  */
 public class MainMenu extends Menu {
-    public MainMenu(Menu newGameMenu, Menu saveGameMenu, Menu loadGameMenu, String type) {
-        if (type == "ingame"){
+    public MainMenu(Menu newGameMenu, Menu saveGameMenu, Menu loadGameMenu, Game game) {
+        if (game != null){
             this.Add("Back", new MenuCallback() {
                 public void Invoke() {
                     return;

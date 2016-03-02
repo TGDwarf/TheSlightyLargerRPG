@@ -79,7 +79,7 @@ public class MapGenerator {
 
     void ProcessMap() {
         List<List<Point>> wallRegions = GetRegions(1);
-        int wallThresholdSize = 50;
+        int wallThresholdSize = 0;
 
         for (List<Point> wallRegion : wallRegions) {
             if (wallRegion.size() < wallThresholdSize) {
@@ -90,7 +90,7 @@ public class MapGenerator {
         }
 
         List<List<Point>> roomRegions = GetRegions(0);
-        int roomThresholdSize = 50;
+        int roomThresholdSize = 0;
         List<Room> survivingRooms = new ArrayList<Room>();
 
 
@@ -253,7 +253,7 @@ public class MapGenerator {
         List<List<Point>> creatureSortedRegions;
         creatureSortedRegions = regions;
         List<Point> mainRegion = creatureSortedRegions.get(0);
-        int monsters = Math.round(monsterDensity * mainRegion.size() / 100);
+        int monsters = Math.round(monsterDensity * mainRegion.size() / 1000);
         Random rand = new Random();
         for (int x = 0; x < monsters; x++) {
 

@@ -8,28 +8,11 @@ import java.util.Scanner;
  * Created by dot on 25-02-2016.
  */
 public class Menu {
-    private ArrayList<MenuItem> items = new ArrayList<MenuItem>();
-
-    private class MenuItem {
-        private MenuCallback menuCallback;
-        private String text;
-
-
-        public MenuItem(String text, MenuCallback menuCallback) {
-            this.menuCallback = menuCallback;
-            this.text = text;
-        }
-
-        public MenuCallback getMenuCallback() {
-            return menuCallback;
-        }
-
-        public String getText() {
-            return text;
-        }
+    public ArrayList<MenuItem> getItems() {
+        return items;
     }
 
-
+    private ArrayList<MenuItem> items = new ArrayList<MenuItem>();
 
     public boolean Add(String text, MenuCallback menuCallback) {
         return items.add(new MenuItem(text, menuCallback));
