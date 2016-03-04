@@ -29,6 +29,7 @@ public class Game {
     Input input = new Input();
     Creature creature;
     List<Creature> creatures = new ArrayList<>();
+    LeaderboardSQL leaderboardSQL = new LeaderboardSQL();
 
     public void startUp() {
 
@@ -41,6 +42,7 @@ public class Game {
         player.setLocation(mapGenerator.playerStartingLocation);
         spawnCreatures();
 
+        leaderboardSQL.insertIntoLeaderBoard(this);
         mapGenerator.DrawPlayerMap(player.getLocation());
         consolePrinter.printMapInfo();
         while(inMapMenu){
@@ -74,7 +76,7 @@ public class Game {
                 xmlHandler.XMLReader();
             }
             if (playerCommand.equals("l") ){
-                //TODO: Retrieve highscore from sql server
+                leaderboardSQL.getLeaderboard();
             }
 
             player.endturnHeal();
@@ -121,9 +123,11 @@ public class Game {
                         player.setExperience(player.getExperience() + creature.getHealth_Max());
                         creaturesDefeated++;
                         mapGenerator.borderedMap[creature.getLocation().x+mapGenerator.borderSize][creature.getLocation().y+mapGenerator.borderSize] = 2;
+                        leaderboardSQL.updateLeaderBoard(this);
                     }
                     else {
                         consolePrinter.gameoverScreen();
+                        leaderboardSQL.updateLeaderBoard(this);
                         System.exit(0);
                     }
                 }

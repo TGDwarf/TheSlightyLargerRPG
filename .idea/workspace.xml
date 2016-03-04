@@ -2,36 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a90d8d2-394a-4d9a-974f-20b2529c1d48" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GAME/LeaderboardSQL.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GAME/XMLHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/UnitTests/AttackTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/UnitTests/CreatureTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/UnitTests/DamageTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/UnitTests/PlayerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/UnitTests/WeaponTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Attack.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Attack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/ClassDiagram.uml" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/ClassDiagram.uml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/ConsolePrinter.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/ConsolePrinter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Damage.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Damage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Entity.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Entity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/JDBCThing.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Game.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Player.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Player.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/WeaponDamage.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/WeaponDamage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/ClassDiagram.uml" afterPath="$PROJECT_DIR$/src/GAME/ClassDiagram.uml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/dot.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/dot.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Readme.md" afterPath="$PROJECT_DIR$/Readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TheSlightyLargerRPG.iml" afterPath="$PROJECT_DIR$/TheSlightyLargerRPG.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Armor.java" afterPath="$PROJECT_DIR$/src/GAME/Armor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Attack.java" afterPath="$PROJECT_DIR$/src/GAME/Attack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/ConsolePrinter.java" afterPath="$PROJECT_DIR$/src/GAME/ConsolePrinter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Damage.java" afterPath="$PROJECT_DIR$/src/GAME/Damage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Entity.java" afterPath="$PROJECT_DIR$/src/GAME/Entity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Combat.java" afterPath="$PROJECT_DIR$/src/GAME/Combat.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Game.java" afterPath="$PROJECT_DIR$/src/GAME/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Item.java" afterPath="$PROJECT_DIR$/src/GAME/Item.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Player.java" afterPath="$PROJECT_DIR$/src/GAME/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Quest.java" afterPath="$PROJECT_DIR$/src/GAME/Quest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/WeaponDamage.java" afterPath="$PROJECT_DIR$/src/GAME/WeaponDamage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/LeaderboardSQL.java" afterPath="$PROJECT_DIR$/src/GAME/LeaderboardSQL.java" />
     </list>
     <ignored path="TheSlightyLargerRPG.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,6 +39,13 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="TheSlightyLargerRPG" />
@@ -69,9 +55,14 @@
       <file leaf-file-name="LeaderboardSQL.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GAME/LeaderboardSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2731377">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.69548875">
+              <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1457067520444" expanded="true" signature="649:798" placeholder="INSERT INTO userhighscore... " />
+                <marker date="1457067520444" expanded="true" signature="2789:2936" placeholder="UPDATE userh... " />
+                <marker date="1457067520444" expanded="true" signature="4338:4398" placeholder="UPDATE userh... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,9 +71,56 @@
         <entry file="file://$PROJECT_DIR$/src/GAME/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="86" column="72" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
+              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding>
                 <element signature="method#movePlayer#0;class#Game#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewGameMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1023#1024#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
+                <element signature="e#1519#1520#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Combat.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Combat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,7 +173,6 @@
         <option value="$PROJECT_DIR$/src/GAME/Menu/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/LoadGameMenu.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Combat.java" />
         <option value="$PROJECT_DIR$/src/GAME/IMapTextures.java" />
         <option value="$PROJECT_DIR$/src/GAME/Attack.java" />
         <option value="$PROJECT_DIR$/Readme.md" />
@@ -152,8 +189,9 @@
         <option value="$PROJECT_DIR$/src/UnitTests/AttackTest.java" />
         <option value="$PROJECT_DIR$/src/UnitTests/DamageTest.java" />
         <option value="$PROJECT_DIR$/src/UnitTests/PlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Game.java" />
         <option value="$PROJECT_DIR$/src/GAME/JDBCThing.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Combat.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Game.java" />
         <option value="$PROJECT_DIR$/src/GAME/LeaderboardSQL.java" />
       </list>
     </option>
@@ -163,11 +201,37 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1050" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SqlNoDataSourceInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -250,6 +314,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheSlightyLargerRPG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheSlightyLargerRPG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GAME" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -260,11 +346,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/GAME" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="GAME" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\IntelliJ Workspace\TheSlightyLargerRPG" />
+      <recent name="C:\IntelliJ Workspace\TheSlightyLargerRPG\src\GAME" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="GAME.Menu" />
@@ -272,11 +362,11 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="GAME" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\IntelliJ Workspace\TheSlightyLargerRPG\src\GAME" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="GAME" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UnitTests in TheSlightyLargerRPG">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="UnitTests in TheSlightyLargerRPG" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -291,32 +381,6 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PlayerTest.testGetLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="UnitTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TheSlightyLargerRPG" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="UnitTests" />
-      <option name="MAIN_CLASS_NAME" value="UnitTests.PlayerTest" />
-      <option name="METHOD_NAME" value="testGetLevel" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -405,6 +469,26 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="GAME.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="GAME.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="TheSlightyLargerRPG" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -809,18 +893,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.UnitTests in TheSlightyLargerRPG" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PlayerTest.testGetLevel" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PlayerTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PlayerTest.testGetHitpoint" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PlayerTest.testAlive" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PlayerTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PlayerTest.testGetHitpoint" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PlayerTest.testAlive" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UnitTests in TheSlightyLargerRPG" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PlayerTest.testAlive" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PlayerTest.testGetHitpoint" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PlayerTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PlayerTest.testGetLevel" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UnitTests in TheSlightyLargerRPG" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PlayerTest.testAlive" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PlayerTest.testGetHitpoint" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PlayerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -838,7 +922,7 @@
       <workItem from="1456338330688" duration="45201000" />
       <workItem from="1456445141473" duration="58342000" />
       <workItem from="1456817271345" duration="34048000" />
-      <workItem from="1456920040433" duration="29469000" />
+      <workItem from="1456920040433" duration="41404000" />
     </task>
     <servers />
   </component>
@@ -855,9 +939,6 @@
     <history-entry file="PlayerTest_testGetLevel - 2016.03.03 at 21h 37m 56s.xml">
       <configuration name="PlayerTest.testGetLevel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlayerTest_testHeal - 2016.03.03 at 21h 34m 22s.xml">
-      <configuration name="PlayerTest.testHeal" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UnitTests_in_TheSlightyLargerRPG - 2016.03.03 at 21h 34m 33s.xml">
       <configuration name="UnitTests in TheSlightyLargerRPG" configurationId="JUnit" />
     </history-entry>
@@ -873,9 +954,12 @@
     <history-entry file="UnitTests_in_TheSlightyLargerRPG - 2016.03.03 at 21h 40m 49s.xml">
       <configuration name="UnitTests in TheSlightyLargerRPG" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UnitTests_in_TheSlightyLargerRPG - 2016.03.04 at 02h 22m 08s.xml">
+      <configuration name="UnitTests in TheSlightyLargerRPG" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216592000" />
+    <option name="totallyTimeSpent" value="228527000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -908,7 +992,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3852013" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" x="212" y="505" width="1314" height="445" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3852013" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" x="212" y="505" width="1314" height="445" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -929,7 +1013,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="146" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GAME/Game.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="173" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -938,70 +1030,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/MenuCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Formatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3324468">
-          <caret line="4301" column="0" selection-start-line="4301" selection-start-column="0" selection-end-line="4301" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/MenuItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/concurrent/ThreadLocalRandom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33265308">
-          <caret line="474" column="0" selection-start-line="474" selection-start-column="0" selection-end-line="474" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/BattleMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#314#315#0" expanded="false" />
-            <element signature="e#386#387#0" expanded="false" />
-            <element signature="e#551#552#0" expanded="false" />
-            <element signature="e#646#647#0" expanded="false" />
-            <element signature="e#718#719#0" expanded="false" />
-            <element signature="e#837#838#0" expanded="false" />
-            <element signature="e#882#883#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/LoadGameMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GAME/Menu/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1373,16 +1401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Combat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.1944447">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GAME/Menu/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1390,14 +1408,6 @@
           <folding>
             <element signature="e#263#273#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1539,7 +1549,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1567,7 +1577,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1609,14 +1619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1702,28 +1704,118 @@
         <state vertical-scroll-proportion="0.4785553">
           <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/ojdbc6.jar!/oracle/jdbc/OracleDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.117647">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82894737">
+          <caret line="384" column="0" selection-start-line="384" selection-start-column="0" selection-end-line="384" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/ojdbc6.jar!/oracle/jdbc/driver/OracleDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64257026">
+          <caret line="233" column="0" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GAME/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19977427">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
             <element signature="e#1519#1520#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar!/com/mysql/jdbc/NonRegisteringDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8235292">
+          <caret line="542" column="0" selection-start-line="542" selection-start-column="0" selection-end-line="542" selection-end-column="0" />
+          <folding>
+            <element signature="e#3240#3241#0" expanded="true" />
+            <element signature="e#3292#3293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar!/com/mysql/jdbc/Driver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.3529415">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar!/com/mysql/jdbc/PreparedStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6204819">
+          <caret line="1059" column="21" selection-start-line="1059" selection-start-column="21" selection-end-line="1059" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar!/com/mysql/jdbc/ConnectionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48795182">
+          <caret line="2859" column="0" selection-start-line="2859" selection-start-column="0" selection-end-line="2859" selection-end-column="0" />
+          <folding>
+            <marker date="1449043324000" expanded="true" signature="91270:91299" placeholder="SELECT @@ses... " />
+            <marker date="1449043324000" expanded="true" signature="105692:105719" placeholder="SELECT @@ses... " />
+            <marker date="1449043324000" expanded="true" signature="107963:107992" placeholder="select @@ses... " />
+            <marker date="1449043324000" expanded="true" signature="115059:115074" placeholder="/* missingVa... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Combat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GAME/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="72" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
           <folding>
             <element signature="method#movePlayer#0;class#Game#0" expanded="false" />
           </folding>
@@ -1732,11 +1824,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GAME/LeaderboardSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2731377">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.69548875">
+          <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1457067520444" expanded="true" signature="649:798" placeholder="INSERT INTO userhighscore... " />
+            <marker date="1457067520444" expanded="true" signature="2789:2936" placeholder="UPDATE userh... " />
+            <marker date="1457067520444" expanded="true" signature="4338:4398" placeholder="UPDATE userh... " />
+          </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>TheSlightyLargerRPG</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>ojdbc6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

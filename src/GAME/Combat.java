@@ -42,8 +42,8 @@ public class Combat {
             player.setAlive(false);
             consolePrinter.print("  " + player.getName() + " has been defeated");
             winner = creature;
-            System.out.println("You have lost the battle.\nPress enter to continue...");
-            in.nextLine();
+            System.out.println("You have lost the battle");
+            System.out.println();
         }
     }
 
