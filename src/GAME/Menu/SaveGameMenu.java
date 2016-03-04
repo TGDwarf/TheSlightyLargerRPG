@@ -20,7 +20,7 @@ public class SaveGameMenu extends Menu{
             public void Invoke() {
             }
         });
-        this.Add("New Save File", new MenuCallback() {
+        this.Add("New Save File - DOES NOT WORK", new MenuCallback() {
             public void Invoke() {
                 String saveFileName = input.inGameGetKeyboardInput();
                 try{

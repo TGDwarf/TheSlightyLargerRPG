@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a90d8d2-394a-4d9a-974f-20b2529c1d48" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Readme.md" afterPath="$PROJECT_DIR$/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/TheSlightyLargerRPG_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/TheSlightyLargerRPG_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/WebContent_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_el_el_ri_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_api_2_1_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_impl_2_1_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Mojarra_2_2_1.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid1936.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ojdbc6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/students.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/ClassDiagram.uml" afterPath="$PROJECT_DIR$/src/GAME/ClassDiagram.uml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game.xml" afterPath="$PROJECT_DIR$/Game.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java" afterPath="$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java" />
     </list>
     <ignored path="TheSlightyLargerRPG.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,22 +97,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GAME/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor vertical-scroll-proportion="0.3404711">
-                <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+              <first_editor vertical-scroll-proportion="0.07317073">
+                <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -104,17 +110,149 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GAME/Entity.java">
+      <file leaf-file-name="LoadGameMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Menu/LoadGameMenu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1023#1024#0" expanded="true" />
-                <element signature="e#1491#1492#0" expanded="true" />
-                <element signature="e#1519#1520#0" expanded="true" />
-              </folding>
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SaveGameMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TheSlightyLargerRPG.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TheSlightyLargerRPG.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassDiagram.uml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GAME/ClassDiagram.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="1095.0" y="1430.0">GAME.Damage</node>
+                <node x="706.0" y="1045.5">GAME.Menu.MainMenu</node>
+                <node x="1404.0" y="1591.0">GAME.WeaponTypes</node>
+                <node x="0.0" y="866.0">GAME.Game</node>
+                <node x="1289.0" y="1045.5">GAME.Menu.LoadGameMenu</node>
+                <node x="705.75" y="0.0">GAME.Entity</node>
+                <node x="142.0" y="733.0">GAME.MapGenerator.Room</node>
+                <node x="273.0" y="1591.0">GAME.Menu.MenuFactory</node>
+                <node x="799.0" y="1591.0">GAME.Main</node>
+                <node x="0.0" y="1430.0">GAME.Combat</node>
+                <node x="352.0" y="866.0">GAME.ConsolePrinter</node>
+                <node x="0.0" y="0.0">GAME.MapGenerator</node>
+                <node x="394.0" y="1430.0">GAME.Input</node>
+                <node x="964.0" y="1045.5">GAME.Menu.SaveGameMenu</node>
+                <node x="1217.0" y="1591.0">GAME.Menu.MenuCallback</node>
+                <node x="873.0" y="1189.0">GAME.Attack</node>
+                <node x="1127.0" y="1032.0">GAME.Menu.NewGameMenu</node>
+                <node x="1579.0" y="1591.0">GAME.IMapTextures</node>
+                <node x="635.0" y="382.0">GAME.Player</node>
+                <node x="760.0" y="1430.0">UnitTests.DamageTest</node>
+                <node x="483.0" y="1189.0">GAME.LeaderboardSQL</node>
+                <node x="1369.0" y="1430.0">GAME.Menu.MenuItem</node>
+                <node x="869.5" y="866.0">GAME.Menu.Menu</node>
+                <node x="0.0" y="1189.0">UnitTests.WeaponTest</node>
+                <node x="1367.0" y="1273.0">GAME.Armor</node>
+                <node x="0.0" y="1591.0">GAME.XMLHandler</node>
+                <node x="0.0" y="1724.0">GAME.Quest</node>
+                <node x="569.0" y="1591.0">UnitTests.CreatureTest</node>
+                <node x="979.0" y="477.0">GAME.Creature</node>
+                <node x="1198.75" y="0.0">UnitTests.PlayerTest</node>
+                <node x="1125.0" y="1189.0">UnitTests.AttackTest</node>
+                <node x="1025.0" y="1591.0">GAME.StartUp</node>
+                <node x="832.0" y="1045.5">GAME.Menu.BattleMenu</node>
+                <node x="1373.0" y="1189.0">GAME.Item</node>
+                <node x="1479.0" y="866.0">GAME.WeaponDamage</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="GAME.Armor" target="GAME.Item">
+                  <point x="0.0" y="-17.0" />
+                  <point x="0.0" y="17.0" />
+                </edge>
+                <edge source="GAME.MapGenerator.Room" target="GAME.MapGenerator">
+                  <point x="0.0" y="-44.0" />
+                  <point x="0.0" y="341.5" />
+                </edge>
+                <edge source="GAME.Menu.BattleMenu" target="GAME.Menu.Menu">
+                  <point x="0.0" y="-17.0" />
+                  <point x="888.0" y="1012.0" />
+                  <point x="969.1" y="1012.0" />
+                  <point x="-66.39999999999998" y="58.0" />
+                </edge>
+                <edge source="GAME.Menu.MainMenu" target="GAME.Menu.Menu">
+                  <point x="0.0" y="-17.0" />
+                  <point x="759.0" y="1002.0" />
+                  <point x="902.7" y="1002.0" />
+                  <point x="-132.79999999999995" y="58.0" />
+                </edge>
+                <edge source="GAME.Menu.NewGameMenu" target="GAME.Menu.Menu">
+                  <point x="0.0" y="-30.5" />
+                  <point x="1198.0" y="1012.0" />
+                  <point x="1101.9" y="1012.0" />
+                  <point x="66.40000000000009" y="58.0" />
+                </edge>
+                <edge source="GAME.Menu.SaveGameMenu" target="GAME.Menu.Menu">
+                  <point x="0.0" y="-17.0" />
+                  <point x="0.0" y="58.0" />
+                </edge>
+                <edge source="GAME.Creature" target="GAME.Entity">
+                  <point x="0.0" y="-30.5" />
+                  <point x="1062.5" y="357.0" />
+                  <point x="1041.75" y="357.0" />
+                  <point x="112.0" y="166.0" />
+                </edge>
+                <edge source="GAME.Menu.LoadGameMenu" target="GAME.Menu.Menu">
+                  <point x="0.0" y="-17.0" />
+                  <point x="1361.5" y="1002.0" />
+                  <point x="1168.3" y="1002.0" />
+                  <point x="132.79999999999995" y="58.0" />
+                </edge>
+                <edge source="GAME.Player" target="GAME.Entity">
+                  <point x="0.0" y="-125.5" />
+                  <point x="797.0" y="357.0" />
+                  <point x="817.75" y="357.0" />
+                  <point x="-112.0" y="166.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.4797525309336333" x="860.5" y="879.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Inner Classes</Category>
+                <Category>Properties</Category>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Item.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -176,7 +314,6 @@
         <option value="$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/MenuFactory.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/MainMenu.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/LoadGameMenu.java" />
         <option value="$PROJECT_DIR$/src/GAME/IMapTextures.java" />
         <option value="$PROJECT_DIR$/src/GAME/Attack.java" />
@@ -198,6 +335,7 @@
         <option value="$PROJECT_DIR$/src/GAME/Game.java" />
         <option value="$PROJECT_DIR$/src/GAME/LeaderboardSQL.java" />
         <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java" />
       </list>
     </option>
   </component>
@@ -263,8 +401,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -283,67 +419,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheSlightyLargerRPG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheSlightyLargerRPG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheSlightyLargerRPG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheSlightyLargerRPG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GAME" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheSlightyLargerRPG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheSlightyLargerRPG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GAME" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,7 +431,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/GAME" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -928,6 +1008,7 @@
       <workItem from="1456445141473" duration="58342000" />
       <workItem from="1456817271345" duration="34048000" />
       <workItem from="1456920040433" duration="42732000" />
+      <workItem from="1457077200784" duration="486000" />
     </task>
     <servers />
   </component>
@@ -964,7 +1045,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229855000" />
+    <option name="totallyTimeSpent" value="230341000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -977,7 +1058,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -986,22 +1067,22 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42219803" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="WINDOWED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-6" y="-23" width="1932" height="1050" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="WINDOWED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-9" y="-9" width="1938" height="1050" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38411316" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" x="212" y="505" width="1314" height="445" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38411316" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" x="212" y="505" width="1314" height="445" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
@@ -1039,24 +1120,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-            <element signature="e#1336#1337#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#1505#1506#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1064,7 +1127,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,337 +1134,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="255" column="33" selection-start-line="255" selection-start-column="23" selection-end-line="255" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/ClassDiagram.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="0.0" y="799.0">GAME.Menu.MainMenu</node>
-            <node x="265.0" y="2477.0">GAME.WeaponTypes</node>
-            <node x="1039.4694393569407" y="283.0">GAME.Damage</node>
-            <node x="126.0" y="799.0">GAME.Menu.LoadGameMenu</node>
-            <node x="1099.8463878713883" y="1855.0">GAME.Game</node>
-            <node x="950.3088878713883" y="650.0">GAME.Entity</node>
-            <node x="2294.6255901505906" y="772.0">GAME.MapGenerator.Room</node>
-            <node x="497.8297212047215" y="2260.0">GAME.Menu.MenuFactory</node>
-            <node x="1066.2672212047214" y="2371.0">GAME.Main</node>
-            <node x="1077.5380901505905" y="1355.5">GAME.Combat</node>
-            <node x="1569.2861060236073" y="691.0">GAME.ConsolePrinter</node>
-            <node x="2002.3755901505906" y="1072.0">GAME.MapGenerator</node>
-            <node x="404.75888787138825" y="1356.0">GAME.Input</node>
-            <node x="303.4611060236073" y="1950.0">GAME.Menu.SaveGameMenu</node>
-            <node x="261.57721815221896" y="81.0">GAME.Menu.MenuCallback</node>
-            <node x="610.0" y="2477.0">GAME.JDBCThing</node>
-            <node x="1031.6361060236072" y="448.0">GAME.Attack</node>
-            <node x="670.0835927960935" y="2139.0">GAME.Menu.NewGameMenu</node>
-            <node x="440.0" y="2477.0">GAME.IMapTextures</node>
-            <node x="1490.3755901505906" y="1288.0">GAME.Player</node>
-            <node x="292.0" y="461.0">GAME.Menu.Menu</node>
-            <node x="325.0" y="296.5">GAME.Menu.MenuItem</node>
-            <node x="0.0" y="2477.0">GAME.XMLHandler</node>
-            <node x="889.5380901505906" y="1383.0">GAME.Creature</node>
-            <node x="1835.3755901505906" y="1383.0">GAME.StartUp</node>
-            <node x="818.3088878713882" y="799.0">GAME.Menu.BattleMenu</node>
-            <node x="1032.9694393569407" y="0.0">GAME.WeaponDamage</node>
-            <node x="762.0" y="2477.0">GAME.Item</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="GAME.Menu.MainMenu" target="GAME.Menu.Menu">
-              <point x="26.5" y="-17.0" />
-              <point x="79.5" y="610.0" />
-              <point x="325.20000000000005" y="610.0" />
-              <point x="-132.8" y="58.0" />
-            </edge>
-            <edge source="GAME.StartUp" target="GAME.ConsolePrinter">
-              <point x="36.75" y="-30.5" />
-              <point x="1945.6255901505906" y="1022.0" />
-              <point x="1801.0361060236073" y="1022.0" />
-              <point x="77.25" y="125.0" />
-            </edge>
-            <edge source="GAME.Menu.MenuFactory" target="GAME.Menu.MainMenu">
-              <point x="-104.58333333333337" y="-30.5" />
-              <point x="518.7463878713882" y="2240.0" />
-              <point x="53.0" y="2240.0" />
-              <point x="0.0" y="17.0" />
-            </edge>
-            <edge source="GAME.Menu.MenuFactory" target="GAME.Menu.LoadGameMenu">
-              <point x="-62.75" y="-30.5" />
-              <point x="560.5797212047215" y="2230.0" />
-              <point x="198.5" y="2230.0" />
-              <point x="0.0" y="17.0" />
-            </edge>
-            <edge source="GAME.Menu.BattleMenu" target="GAME.Menu.MenuCallback">
-              <point x="28.0" y="-17.0" />
-              <point x="902.3088878713882" y="243.0" />
-              <point x="391.7438848188857" y="243.0" />
-              <point x="59.16666666666674" y="30.5" />
-            </edge>
-            <edge source="GAME.Game" target="GAME.Creature">
-              <point x="-20.538461538461547" y="-112.0" />
-              <point x="1212.8079263329269" y="1785.0" />
-              <point x="1028.7047568172575" y="1785.0" />
-              <point x="55.66666666666674" y="30.5" />
-            </edge>
-            <edge source="GAME.Combat" target="GAME.Entity">
-              <point x="-43.625" y="-58.0" />
-              <point x="1208.4130901505905" y="1022.0" />
-              <point x="1174.3088878713884" y="1022.0" />
-              <point x="0.0" y="166.0" />
-            </edge>
-            <edge source="GAME.Menu.NewGameMenu" target="GAME.Menu.MenuCallback">
-              <point x="11.833333333333314" y="-30.5" />
-              <point x="752.9169261294269" y="2099.0" />
-              <point x="796.8088878713882" y="2099.0" />
-              <point x="796.8088878713882" y="253.0" />
-              <point x="368.07721815221896" y="253.0" />
-              <point x="35.5" y="30.5" />
-            </edge>
-            <edge source="GAME.Menu.NewGameMenu" target="GAME.Game">
-              <point x="35.5" y="-30.5" />
-              <point x="776.5835927960935" y="2109.0" />
-              <point x="1133.2213878713883" y="2109.0" />
-              <point x="-100.125" y="112.0" />
-            </edge>
-            <edge source="GAME.Menu.Menu" target="GAME.Menu.MenuItem">
-              <point x="0.0" y="-58.0" />
-              <point x="0.0" y="44.0" />
-            </edge>
-            <edge source="GAME.Menu.SaveGameMenu" target="GAME.Menu.MenuCallback">
-              <point x="-53.625" y="-17.0" />
-              <point x="321.3361060236073" y="1835.0" />
-              <point x="281.5" y="1835.0" />
-              <point x="281.5" y="263.0" />
-              <point x="320.7438848188857" y="263.0" />
-              <point x="-11.833333333333258" y="30.5" />
-            </edge>
-            <edge source="GAME.Combat" target="GAME.ConsolePrinter">
-              <point x="130.875" y="-58.0" />
-              <point x="1382.9130901505905" y="1052.0" />
-              <point x="1646.5361060236073" y="1052.0" />
-              <point x="-77.25" y="125.0" />
-            </edge>
-            <edge source="GAME.Menu.NewGameMenu" target="GAME.Menu.Menu">
-              <point x="-11.833333333333371" y="-30.5" />
-              <point x="729.2502594627601" y="2119.0" />
-              <point x="736.2588878713882" y="2119.0" />
-              <point x="736.2588878713882" y="630.0" />
-              <point x="524.4" y="630.0" />
-              <point x="66.39999999999998" y="58.0" />
-            </edge>
-            <edge source="GAME.Entity" target="GAME.Damage">
-              <point x="112.0" y="-166.0" />
-              <point x="1286.3088878713884" y="630.0" />
-              <point x="1249.1361060236072" y="630.0" />
-              <point x="1249.1361060236072" y="423.0" />
-              <point x="1230.3027726902737" y="423.0" />
-              <point x="76.33333333333326" y="57.5" />
-            </edge>
-            <edge source="GAME.MapGenerator" target="GAME.ConsolePrinter">
-              <point x="-221.25" y="-341.5" />
-              <point x="2076.1255901505906" y="1012.0" />
-              <point x="1831.936106023607" y="1012.0" />
-              <point x="108.14999999999986" y="125.0" />
-            </edge>
-            <edge source="GAME.Game" target="GAME.Damage">
-              <point x="-82.15384615384619" y="-112.0" />
-              <point x="1151.192541717542" y="1815.0" />
-              <point x="807.8088878713882" y="1815.0" />
-              <point x="807.8088878713882" y="423.0" />
-              <point x="1077.6361060236072" y="423.0" />
-              <point x="-76.33333333333326" y="57.5" />
-            </edge>
-            <edge source="GAME.Game" target="GAME.Player">
-              <point x="41.076923076923094" y="-112.0" />
-              <point x="1274.4233109483114" y="1795.0" />
-              <point x="1571.3755901505906" y="1795.0" />
-              <point x="-81.0" y="125.5" />
-            </edge>
-            <edge source="GAME.MapGenerator.Room" target="GAME.MapGenerator">
-              <point x="76.5" y="44.0" />
-              <point x="2524.1255901505906" y="1052.0" />
-              <point x="2518.6255901505906" y="1052.0" />
-              <point x="221.25" y="-341.5" />
-            </edge>
-            <edge source="GAME.MapGenerator" target="GAME.MapGenerator.Room">
-              <point x="73.75" y="-341.5" />
-              <point x="-76.5" y="44.0" />
-            </edge>
-            <edge source="GAME.Combat" target="GAME.Menu.BattleMenu">
-              <point x="-130.875" y="-58.0" />
-              <point x="1121.1630901505905" y="1022.0" />
-              <point x="874.3088878713882" y="1022.0" />
-              <point x="0.0" y="17.0" />
-            </edge>
-            <edge source="GAME.Menu.SaveGameMenu" target="GAME.Menu.Menu">
-              <point x="-17.875" y="-17.0" />
-              <point x="357.0861060236073" y="1815.0" />
-              <point x="394.25888787138825" y="1815.0" />
-              <point x="394.25888787138825" y="630.0" />
-              <point x="458.0" y="630.0" />
-              <point x="0.0" y="58.0" />
-            </edge>
-            <edge source="GAME.Menu.MenuFactory" target="GAME.Menu.SaveGameMenu">
-              <point x="-20.916666666666657" y="-30.5" />
-              <point x="602.4130545380549" y="2220.0" />
-              <point x="374.9611060236073" y="2220.0" />
-              <point x="0.0" y="17.0" />
-            </edge>
-            <edge source="GAME.Menu.MainMenu" target="GAME.Menu.MenuCallback">
-              <point x="-26.5" y="-17.0" />
-              <point x="26.5" y="243.0" />
-              <point x="273.41055148555233" y="243.0" />
-              <point x="-59.16666666666663" y="30.5" />
-            </edge>
-            <edge source="GAME.Menu.MenuFactory" target="GAME.Menu.NewGameMenu">
-              <point x="20.916666666666686" y="-30.5" />
-              <point x="644.2463878713882" y="2220.0" />
-              <point x="741.0835927960935" y="2220.0" />
-              <point x="0.0" y="30.5" />
-            </edge>
-            <edge source="GAME.Menu.LoadGameMenu" target="GAME.Menu.MenuCallback">
-              <point x="-36.25" y="-17.0" />
-              <point x="162.25" y="253.0" />
-              <point x="297.07721815221896" y="253.0" />
-              <point x="-35.5" y="30.5" />
-            </edge>
-            <edge source="GAME.Menu.MenuItem" target="GAME.Menu.MenuCallback">
-              <point x="0.0" y="-44.0" />
-              <point x="458.0" y="263.0" />
-              <point x="344.4105514855522" y="263.0" />
-              <point x="11.833333333333258" y="30.5" />
-            </edge>
-            <edge source="GAME.Main" target="GAME.StartUp">
-              <point x="45.25" y="-30.5" />
-              <point x="1202.0172212047214" y="2346.0" />
-              <point x="2096.235576923077" y="2346.0" />
-              <point x="2096.235576923077" y="1815.0" />
-              <point x="1908.8755901505906" y="1815.0" />
-              <point x="0.0" y="30.5" />
-            </edge>
-            <edge source="GAME.Creature" target="GAME.Entity">
-              <point x="0.0" y="-30.5" />
-              <point x="973.0380901505906" y="1052.0" />
-              <point x="1024.975554538055" y="1052.0" />
-              <point x="-149.33333333333337" y="166.0" />
-            </edge>
-            <edge source="GAME.Menu.LoadGameMenu" target="GAME.Menu.Menu">
-              <point x="36.25" y="-17.0" />
-              <point x="234.75" y="620.0" />
-              <point x="391.6" y="620.0" />
-              <point x="-66.39999999999998" y="58.0" />
-            </edge>
-            <edge source="GAME.Main" target="GAME.Menu.MenuFactory">
-              <point x="-45.25" y="-30.5" />
-              <point x="1111.5172212047214" y="2346.0" />
-              <point x="623.3297212047215" y="2346.0" />
-              <point x="0.0" y="30.5" />
-            </edge>
-            <edge source="GAME.Entity" target="GAME.Attack">
-              <point x="-112.0" y="-166.0" />
-              <point x="1062.3088878713884" y="630.0" />
-              <point x="1135.1361060236072" y="630.0" />
-              <point x="0.0" y="71.0" />
-            </edge>
-            <edge source="GAME.Game" target="GAME.Menu.MenuFactory">
-              <point x="33.375" y="112.0" />
-              <point x="1266.7213878713883" y="2119.0" />
-              <point x="1294.5963878713883" y="2119.0" />
-              <point x="1294.5963878713883" y="2230.0" />
-              <point x="686.0797212047215" y="2230.0" />
-              <point x="62.75" y="-30.5" />
-            </edge>
-            <edge source="GAME.Menu.BattleMenu" target="GAME.Menu.Menu">
-              <point x="-28.0" y="-17.0" />
-              <point x="846.3088878713882" y="620.0" />
-              <point x="590.8" y="620.0" />
-              <point x="132.8" y="58.0" />
-            </edge>
-            <edge source="GAME.Damage" target="GAME.WeaponDamage">
-              <point x="0.0" y="-57.5" />
-              <point x="0.0" y="111.5" />
-            </edge>
-            <edge source="GAME.Player" target="GAME.ConsolePrinter">
-              <point x="108.0" y="-125.5" />
-              <point x="1760.3755901505906" y="1052.0" />
-              <point x="1708.336106023607" y="1052.0" />
-              <point x="-15.450000000000045" y="125.0" />
-            </edge>
-            <edge source="GAME.Menu.NewGameMenu" target="GAME.Input">
-              <point x="-35.5" y="-30.5" />
-              <point x="705.5835927960935" y="2109.0" />
-              <point x="570.7588878713882" y="2109.0" />
-              <point x="570.7588878713882" y="1835.0" />
-              <point x="592.0088878713882" y="1835.0" />
-              <point x="26.75" y="57.5" />
-            </edge>
-            <edge source="GAME.Game" target="GAME.Combat">
-              <point x="20.538461538461547" y="-112.0" />
-              <point x="1253.8848494098497" y="1835.0" />
-              <point x="1252.0380901505905" y="1835.0" />
-              <point x="0.0" y="58.0" />
-            </edge>
-            <edge source="GAME.Game" target="GAME.Input">
-              <point x="-123.23076923076928" y="-112.0" />
-              <point x="1110.115618640619" y="1835.0" />
-              <point x="645.5088878713882" y="1835.0" />
-              <point x="80.25" y="57.5" />
-            </edge>
-            <edge source="GAME.Menu.SaveGameMenu" target="GAME.Input">
-              <point x="17.875" y="-17.0" />
-              <point x="392.8361060236073" y="1825.0" />
-              <point x="431.50888787138825" y="1825.0" />
-              <point x="-133.75" y="57.5" />
-            </edge>
-            <edge source="GAME.Game" target="GAME.MapGenerator">
-              <point x="123.23076923076928" y="-112.0" />
-              <point x="1356.5771571021576" y="1835.0" />
-              <point x="2444.8755901505906" y="1835.0" />
-              <point x="147.5" y="341.5" />
-            </edge>
-            <edge source="GAME.Attack" target="GAME.Damage">
-              <point x="0.0" y="-71.0" />
-              <point x="1135.1361060236072" y="423.0" />
-              <point x="1153.9694393569407" y="423.0" />
-              <point x="0.0" y="57.5" />
-            </edge>
-            <edge source="GAME.Game" target="GAME.ConsolePrinter">
-              <point x="82.15384615384619" y="-112.0" />
-              <point x="1315.5002340252345" y="1815.0" />
-              <point x="1824.8755901505906" y="1815.0" />
-              <point x="1824.8755901505906" y="1042.0" />
-              <point x="1739.2361060236071" y="1042.0" />
-              <point x="15.450000000000045" y="125.0" />
-            </edge>
-            <edge source="GAME.Player" target="GAME.Entity">
-              <point x="-108.0" y="-125.5" />
-              <point x="1544.3755901505906" y="1022.0" />
-              <point x="1323.6422212047219" y="1022.0" />
-              <point x="149.33333333333348" y="166.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.33346364347146207" x="-360.2813599062133" y="717.7186400937867" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Inner Classes</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TheSlightyLargerRPG.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1410,9 +1141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#263#273#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1428,7 +1156,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1436,7 +1163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="664" column="0" selection-start-line="664" selection-start-column="0" selection-end-line="664" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1444,7 +1170,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2593985">
           <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1452,7 +1177,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1460,7 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1486,7 +1209,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1494,7 +1216,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1502,14 +1223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1528,7 +1241,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1536,9 +1248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1546,7 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.823529">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1554,9 +1262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1564,9 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1574,9 +1276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1584,12 +1283,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1597,9 +1290,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5582329">
           <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="e#2590#2591#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1607,7 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1615,9 +1305,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.852941">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#629#630#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1625,7 +1313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5882354">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1633,10 +1320,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.64705884">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="e#982#1175#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1644,7 +1328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.470589">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1652,14 +1335,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.882353">
           <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
-          <folding>
-            <element signature="e#2137#2138#0" expanded="true" />
-            <element signature="e#2181#2182#0" expanded="true" />
-            <element signature="e#5891#6026#0" expanded="true" />
-            <element signature="e#6025#6026#0" expanded="true" />
-            <element signature="e#6429#6593#0" expanded="true" />
-            <element signature="e#6592#6593#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1667,7 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.2058825">
           <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1675,7 +1350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9076305">
           <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1683,7 +1357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.052208837">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1691,9 +1364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4785553">
           <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1705,27 +1375,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/ojdbc6.jar!/oracle/jdbc/OracleDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.117647">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.82894737">
           <caret line="384" column="0" selection-start-line="384" selection-start-column="0" selection-end-line="384" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/ojdbc6.jar!/oracle/jdbc/driver/OracleDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64257026">
-          <caret line="233" column="0" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1746,10 +1399,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.8235292">
           <caret line="542" column="0" selection-start-line="542" selection-start-column="0" selection-end-line="542" selection-end-column="0" />
-          <folding>
-            <element signature="e#3240#3241#0" expanded="true" />
-            <element signature="e#3292#3293#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1757,7 +1407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.3529415">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1765,7 +1414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6204819">
           <caret line="1059" column="21" selection-start-line="1059" selection-start-column="21" selection-end-line="1059" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1826,8 +1474,8 @@
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor vertical-scroll-proportion="0.3404711">
-            <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+          <first_editor vertical-scroll-proportion="0.07317073">
+            <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1837,6 +1485,143 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/LoadGameMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TheSlightyLargerRPG.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/ClassDiagram.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="1095.0" y="1430.0">GAME.Damage</node>
+            <node x="706.0" y="1045.5">GAME.Menu.MainMenu</node>
+            <node x="1404.0" y="1591.0">GAME.WeaponTypes</node>
+            <node x="0.0" y="866.0">GAME.Game</node>
+            <node x="1289.0" y="1045.5">GAME.Menu.LoadGameMenu</node>
+            <node x="705.75" y="0.0">GAME.Entity</node>
+            <node x="142.0" y="733.0">GAME.MapGenerator.Room</node>
+            <node x="273.0" y="1591.0">GAME.Menu.MenuFactory</node>
+            <node x="799.0" y="1591.0">GAME.Main</node>
+            <node x="0.0" y="1430.0">GAME.Combat</node>
+            <node x="352.0" y="866.0">GAME.ConsolePrinter</node>
+            <node x="0.0" y="0.0">GAME.MapGenerator</node>
+            <node x="394.0" y="1430.0">GAME.Input</node>
+            <node x="964.0" y="1045.5">GAME.Menu.SaveGameMenu</node>
+            <node x="1217.0" y="1591.0">GAME.Menu.MenuCallback</node>
+            <node x="873.0" y="1189.0">GAME.Attack</node>
+            <node x="1127.0" y="1032.0">GAME.Menu.NewGameMenu</node>
+            <node x="1579.0" y="1591.0">GAME.IMapTextures</node>
+            <node x="635.0" y="382.0">GAME.Player</node>
+            <node x="760.0" y="1430.0">UnitTests.DamageTest</node>
+            <node x="483.0" y="1189.0">GAME.LeaderboardSQL</node>
+            <node x="1369.0" y="1430.0">GAME.Menu.MenuItem</node>
+            <node x="869.5" y="866.0">GAME.Menu.Menu</node>
+            <node x="0.0" y="1189.0">UnitTests.WeaponTest</node>
+            <node x="1367.0" y="1273.0">GAME.Armor</node>
+            <node x="0.0" y="1591.0">GAME.XMLHandler</node>
+            <node x="0.0" y="1724.0">GAME.Quest</node>
+            <node x="569.0" y="1591.0">UnitTests.CreatureTest</node>
+            <node x="979.0" y="477.0">GAME.Creature</node>
+            <node x="1198.75" y="0.0">UnitTests.PlayerTest</node>
+            <node x="1125.0" y="1189.0">UnitTests.AttackTest</node>
+            <node x="1025.0" y="1591.0">GAME.StartUp</node>
+            <node x="832.0" y="1045.5">GAME.Menu.BattleMenu</node>
+            <node x="1373.0" y="1189.0">GAME.Item</node>
+            <node x="1479.0" y="866.0">GAME.WeaponDamage</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="GAME.Armor" target="GAME.Item">
+              <point x="0.0" y="-17.0" />
+              <point x="0.0" y="17.0" />
+            </edge>
+            <edge source="GAME.MapGenerator.Room" target="GAME.MapGenerator">
+              <point x="0.0" y="-44.0" />
+              <point x="0.0" y="341.5" />
+            </edge>
+            <edge source="GAME.Menu.BattleMenu" target="GAME.Menu.Menu">
+              <point x="0.0" y="-17.0" />
+              <point x="888.0" y="1012.0" />
+              <point x="969.1" y="1012.0" />
+              <point x="-66.39999999999998" y="58.0" />
+            </edge>
+            <edge source="GAME.Menu.MainMenu" target="GAME.Menu.Menu">
+              <point x="0.0" y="-17.0" />
+              <point x="759.0" y="1002.0" />
+              <point x="902.7" y="1002.0" />
+              <point x="-132.79999999999995" y="58.0" />
+            </edge>
+            <edge source="GAME.Menu.NewGameMenu" target="GAME.Menu.Menu">
+              <point x="0.0" y="-30.5" />
+              <point x="1198.0" y="1012.0" />
+              <point x="1101.9" y="1012.0" />
+              <point x="66.40000000000009" y="58.0" />
+            </edge>
+            <edge source="GAME.Menu.SaveGameMenu" target="GAME.Menu.Menu">
+              <point x="0.0" y="-17.0" />
+              <point x="0.0" y="58.0" />
+            </edge>
+            <edge source="GAME.Creature" target="GAME.Entity">
+              <point x="0.0" y="-30.5" />
+              <point x="1062.5" y="357.0" />
+              <point x="1041.75" y="357.0" />
+              <point x="112.0" y="166.0" />
+            </edge>
+            <edge source="GAME.Menu.LoadGameMenu" target="GAME.Menu.Menu">
+              <point x="0.0" y="-17.0" />
+              <point x="1361.5" y="1002.0" />
+              <point x="1168.3" y="1002.0" />
+              <point x="132.79999999999995" y="58.0" />
+            </edge>
+            <edge source="GAME.Player" target="GAME.Entity">
+              <point x="0.0" y="-125.5" />
+              <point x="797.0" y="357.0" />
+              <point x="817.75" y="357.0" />
+              <point x="-112.0" y="166.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.4797525309336333" x="860.5" y="879.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Inner Classes</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
