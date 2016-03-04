@@ -1,5 +1,6 @@
 package GAME;
 
+import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
@@ -15,10 +16,7 @@ public class Attack {
     private double levelMultiplier = 1;
     private double calculatedDMG;
     private double multiplier;
-
-    private void determineOrder(){
-
-    }
+    private List<String> skillList;
 
     public double hack() {
         multiplier = 0.05 + levelMultiplier;

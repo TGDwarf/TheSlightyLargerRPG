@@ -1,5 +1,7 @@
 package GAME;
 
+import java.util.List;
+
 /**
  * Created by dot on 25-02-2016.
  */
@@ -56,7 +58,7 @@ public class Player extends Entity {
     public void heal(){
         if (potionUsed == false){
             setHealth((int)Math.min(getHealth_Max(),getHealth() + (getHealth_Max()*0.6)));
-            consolePrinter.print(getName() + "Drinks a potion and is now at " + getHealth());
+            consolePrinter.print(getName() + " drinks a potion and is now at " + getHealth());
             potionUsed = true;
         }
         else{

@@ -3,43 +3,311 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="622.0">GAME.Game</node>
-    <node x="326.0" y="516.0">GAME.MapGenerator.Coord</node>
-    <node x="0.0" y="489.0">GAME.MapGenerator.Room</node>
-    <node x="45.0" y="760.0">GAME.Game.Coord</node>
-    <node x="0.0" y="839.0">GAME.Main</node>
-    <node x="531.75" y="138.0">GAME.Menu.MenuItem</node>
-    <node x="508.75" y="0.0">GAME.Menu</node>
-    <node x="226.0" y="839.0">GAME.MenuCallback</node>
-    <node x="212.0" y="622.0">GAME.ConsolePrinter</node>
-    <node x="53.75" y="0.0">GAME.MapGenerator</node>
-    <node x="486.0" y="622.0">GAME.Input</node>
-    <node x="760.0" y="622.0">GAME.MenuHelper</node>
+    <node x="0.0" y="799.0">GAME.Menu.MainMenu</node>
+    <node x="265.0" y="2477.0">GAME.WeaponTypes</node>
+    <node x="1039.4694393569407" y="283.0">GAME.Damage</node>
+    <node x="126.0" y="799.0">GAME.Menu.LoadGameMenu</node>
+    <node x="1099.8463878713883" y="1855.0">GAME.Game</node>
+    <node x="950.3088878713883" y="650.0">GAME.Entity</node>
+    <node x="2294.6255901505906" y="772.0">GAME.MapGenerator.Room</node>
+    <node x="497.8297212047215" y="2260.0">GAME.Menu.MenuFactory</node>
+    <node x="1066.2672212047214" y="2371.0">GAME.Main</node>
+    <node x="1077.5380901505905" y="1355.5">GAME.Combat</node>
+    <node x="1569.2861060236073" y="691.0">GAME.ConsolePrinter</node>
+    <node x="2002.3755901505906" y="1072.0">GAME.MapGenerator</node>
+    <node x="404.75888787138825" y="1356.0">GAME.Input</node>
+    <node x="303.4611060236073" y="1950.0">GAME.Menu.SaveGameMenu</node>
+    <node x="261.57721815221896" y="81.0">GAME.Menu.MenuCallback</node>
+    <node x="610.0" y="2477.0">GAME.JDBCThing</node>
+    <node x="1031.6361060236072" y="448.0">GAME.Attack</node>
+    <node x="670.0835927960935" y="2139.0">GAME.Menu.NewGameMenu</node>
+    <node x="440.0" y="2477.0">GAME.IMapTextures</node>
+    <node x="1490.3755901505906" y="1288.0">GAME.Player</node>
+    <node x="292.0" y="461.0">GAME.Menu.Menu</node>
+    <node x="325.0" y="296.5">GAME.Menu.MenuItem</node>
+    <node x="0.0" y="2477.0">GAME.XMLHandler</node>
+    <node x="889.5380901505906" y="1383.0">GAME.Creature</node>
+    <node x="1835.3755901505906" y="1383.0">GAME.StartUp</node>
+    <node x="818.3088878713882" y="799.0">GAME.Menu.BattleMenu</node>
+    <node x="1032.9694393569407" y="0.0">GAME.WeaponDamage</node>
+    <node x="762.0" y="2477.0">GAME.Item</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="GAME.Game.Coord" target="GAME.Game">
-      <point x="0.0" y="-17.0" />
+    <edge source="GAME.Menu.MainMenu" target="GAME.Menu.Menu">
+      <point x="26.5" y="-17.0" />
+      <point x="79.5" y="610.0" />
+      <point x="325.20000000000005" y="610.0" />
+      <point x="-132.8" y="58.0" />
+    </edge>
+    <edge source="GAME.StartUp" target="GAME.ConsolePrinter">
+      <point x="36.75" y="-30.5" />
+      <point x="1945.6255901505906" y="1022.0" />
+      <point x="1801.0361060236073" y="1022.0" />
+      <point x="77.25" y="125.0" />
+    </edge>
+    <edge source="GAME.Menu.MenuFactory" target="GAME.Menu.MainMenu">
+      <point x="-104.58333333333337" y="-30.5" />
+      <point x="518.7463878713882" y="2240.0" />
+      <point x="53.0" y="2240.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="GAME.Menu.MenuFactory" target="GAME.Menu.LoadGameMenu">
+      <point x="-62.75" y="-30.5" />
+      <point x="560.5797212047215" y="2230.0" />
+      <point x="198.5" y="2230.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="GAME.Menu.BattleMenu" target="GAME.Menu.MenuCallback">
+      <point x="28.0" y="-17.0" />
+      <point x="902.3088878713882" y="243.0" />
+      <point x="391.7438848188857" y="243.0" />
+      <point x="59.16666666666674" y="30.5" />
+    </edge>
+    <edge source="GAME.Game" target="GAME.Creature">
+      <point x="-20.538461538461547" y="-112.0" />
+      <point x="1212.8079263329269" y="1785.0" />
+      <point x="1028.7047568172575" y="1785.0" />
+      <point x="55.66666666666674" y="30.5" />
+    </edge>
+    <edge source="GAME.Combat" target="GAME.Entity">
+      <point x="-43.625" y="-58.0" />
+      <point x="1208.4130901505905" y="1022.0" />
+      <point x="1174.3088878713884" y="1022.0" />
+      <point x="0.0" y="166.0" />
+    </edge>
+    <edge source="GAME.Menu.NewGameMenu" target="GAME.Menu.MenuCallback">
+      <point x="11.833333333333314" y="-30.5" />
+      <point x="752.9169261294269" y="2099.0" />
+      <point x="796.8088878713882" y="2099.0" />
+      <point x="796.8088878713882" y="253.0" />
+      <point x="368.07721815221896" y="253.0" />
+      <point x="35.5" y="30.5" />
+    </edge>
+    <edge source="GAME.Menu.NewGameMenu" target="GAME.Game">
+      <point x="35.5" y="-30.5" />
+      <point x="776.5835927960935" y="2109.0" />
+      <point x="1133.2213878713883" y="2109.0" />
+      <point x="-100.125" y="112.0" />
+    </edge>
+    <edge source="GAME.Menu.Menu" target="GAME.Menu.MenuItem">
+      <point x="0.0" y="-58.0" />
       <point x="0.0" y="44.0" />
     </edge>
-    <edge source="GAME.Menu.MenuItem" target="GAME.Menu">
-      <point x="0.0" y="-44.0" />
-      <point x="0.0" y="44.0" />
+    <edge source="GAME.Menu.SaveGameMenu" target="GAME.Menu.MenuCallback">
+      <point x="-53.625" y="-17.0" />
+      <point x="321.3361060236073" y="1835.0" />
+      <point x="281.5" y="1835.0" />
+      <point x="281.5" y="263.0" />
+      <point x="320.7438848188857" y="263.0" />
+      <point x="-11.833333333333258" y="30.5" />
+    </edge>
+    <edge source="GAME.Combat" target="GAME.ConsolePrinter">
+      <point x="130.875" y="-58.0" />
+      <point x="1382.9130901505905" y="1052.0" />
+      <point x="1646.5361060236073" y="1052.0" />
+      <point x="-77.25" y="125.0" />
+    </edge>
+    <edge source="GAME.Menu.NewGameMenu" target="GAME.Menu.Menu">
+      <point x="-11.833333333333371" y="-30.5" />
+      <point x="729.2502594627601" y="2119.0" />
+      <point x="736.2588878713882" y="2119.0" />
+      <point x="736.2588878713882" y="630.0" />
+      <point x="524.4" y="630.0" />
+      <point x="66.39999999999998" y="58.0" />
+    </edge>
+    <edge source="GAME.Entity" target="GAME.Damage">
+      <point x="112.0" y="-166.0" />
+      <point x="1286.3088878713884" y="630.0" />
+      <point x="1249.1361060236072" y="630.0" />
+      <point x="1249.1361060236072" y="423.0" />
+      <point x="1230.3027726902737" y="423.0" />
+      <point x="76.33333333333326" y="57.5" />
+    </edge>
+    <edge source="GAME.MapGenerator" target="GAME.ConsolePrinter">
+      <point x="-221.25" y="-341.5" />
+      <point x="2076.1255901505906" y="1012.0" />
+      <point x="1831.936106023607" y="1012.0" />
+      <point x="108.14999999999986" y="125.0" />
+    </edge>
+    <edge source="GAME.Game" target="GAME.Damage">
+      <point x="-82.15384615384619" y="-112.0" />
+      <point x="1151.192541717542" y="1815.0" />
+      <point x="807.8088878713882" y="1815.0" />
+      <point x="807.8088878713882" y="423.0" />
+      <point x="1077.6361060236072" y="423.0" />
+      <point x="-76.33333333333326" y="57.5" />
+    </edge>
+    <edge source="GAME.Game" target="GAME.Player">
+      <point x="41.076923076923094" y="-112.0" />
+      <point x="1274.4233109483114" y="1795.0" />
+      <point x="1571.3755901505906" y="1795.0" />
+      <point x="-81.0" y="125.5" />
     </edge>
     <edge source="GAME.MapGenerator.Room" target="GAME.MapGenerator">
-      <point x="0.0" y="-44.0" />
-      <point x="153.0" y="464.0" />
-      <point x="156.25" y="464.0" />
-      <point x="-102.5" y="219.5" />
+      <point x="76.5" y="44.0" />
+      <point x="2524.1255901505906" y="1052.0" />
+      <point x="2518.6255901505906" y="1052.0" />
+      <point x="221.25" y="-341.5" />
     </edge>
-    <edge source="GAME.MapGenerator.Coord" target="GAME.MapGenerator">
-      <point x="0.0" y="-17.0" />
-      <point x="364.5" y="464.0" />
-      <point x="361.25" y="464.0" />
-      <point x="102.5" y="219.5" />
+    <edge source="GAME.MapGenerator" target="GAME.MapGenerator.Room">
+      <point x="73.75" y="-341.5" />
+      <point x="-76.5" y="44.0" />
+    </edge>
+    <edge source="GAME.Combat" target="GAME.Menu.BattleMenu">
+      <point x="-130.875" y="-58.0" />
+      <point x="1121.1630901505905" y="1022.0" />
+      <point x="874.3088878713882" y="1022.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="GAME.Menu.SaveGameMenu" target="GAME.Menu.Menu">
+      <point x="-17.875" y="-17.0" />
+      <point x="357.0861060236073" y="1815.0" />
+      <point x="394.25888787138825" y="1815.0" />
+      <point x="394.25888787138825" y="630.0" />
+      <point x="458.0" y="630.0" />
+      <point x="0.0" y="58.0" />
+    </edge>
+    <edge source="GAME.Menu.MenuFactory" target="GAME.Menu.SaveGameMenu">
+      <point x="-20.916666666666657" y="-30.5" />
+      <point x="602.4130545380549" y="2220.0" />
+      <point x="374.9611060236073" y="2220.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="GAME.Menu.MainMenu" target="GAME.Menu.MenuCallback">
+      <point x="-26.5" y="-17.0" />
+      <point x="26.5" y="243.0" />
+      <point x="273.41055148555233" y="243.0" />
+      <point x="-59.16666666666663" y="30.5" />
+    </edge>
+    <edge source="GAME.Menu.MenuFactory" target="GAME.Menu.NewGameMenu">
+      <point x="20.916666666666686" y="-30.5" />
+      <point x="644.2463878713882" y="2220.0" />
+      <point x="741.0835927960935" y="2220.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="GAME.Menu.LoadGameMenu" target="GAME.Menu.MenuCallback">
+      <point x="-36.25" y="-17.0" />
+      <point x="162.25" y="253.0" />
+      <point x="297.07721815221896" y="253.0" />
+      <point x="-35.5" y="30.5" />
+    </edge>
+    <edge source="GAME.Menu.MenuItem" target="GAME.Menu.MenuCallback">
+      <point x="0.0" y="-44.0" />
+      <point x="458.0" y="263.0" />
+      <point x="344.4105514855522" y="263.0" />
+      <point x="11.833333333333258" y="30.5" />
+    </edge>
+    <edge source="GAME.Main" target="GAME.StartUp">
+      <point x="45.25" y="-30.5" />
+      <point x="1202.0172212047214" y="2346.0" />
+      <point x="2096.235576923077" y="2346.0" />
+      <point x="2096.235576923077" y="1815.0" />
+      <point x="1908.8755901505906" y="1815.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="GAME.Creature" target="GAME.Entity">
+      <point x="0.0" y="-30.5" />
+      <point x="973.0380901505906" y="1052.0" />
+      <point x="1024.975554538055" y="1052.0" />
+      <point x="-149.33333333333337" y="166.0" />
+    </edge>
+    <edge source="GAME.Menu.LoadGameMenu" target="GAME.Menu.Menu">
+      <point x="36.25" y="-17.0" />
+      <point x="234.75" y="620.0" />
+      <point x="391.6" y="620.0" />
+      <point x="-66.39999999999998" y="58.0" />
+    </edge>
+    <edge source="GAME.Main" target="GAME.Menu.MenuFactory">
+      <point x="-45.25" y="-30.5" />
+      <point x="1111.5172212047214" y="2346.0" />
+      <point x="623.3297212047215" y="2346.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="GAME.Entity" target="GAME.Attack">
+      <point x="-112.0" y="-166.0" />
+      <point x="1062.3088878713884" y="630.0" />
+      <point x="1135.1361060236072" y="630.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="GAME.Game" target="GAME.Menu.MenuFactory">
+      <point x="33.375" y="112.0" />
+      <point x="1266.7213878713883" y="2119.0" />
+      <point x="1294.5963878713883" y="2119.0" />
+      <point x="1294.5963878713883" y="2230.0" />
+      <point x="686.0797212047215" y="2230.0" />
+      <point x="62.75" y="-30.5" />
+    </edge>
+    <edge source="GAME.Menu.BattleMenu" target="GAME.Menu.Menu">
+      <point x="-28.0" y="-17.0" />
+      <point x="846.3088878713882" y="620.0" />
+      <point x="590.8" y="620.0" />
+      <point x="132.8" y="58.0" />
+    </edge>
+    <edge source="GAME.Damage" target="GAME.WeaponDamage">
+      <point x="0.0" y="-57.5" />
+      <point x="0.0" y="111.5" />
+    </edge>
+    <edge source="GAME.Player" target="GAME.ConsolePrinter">
+      <point x="108.0" y="-125.5" />
+      <point x="1760.3755901505906" y="1052.0" />
+      <point x="1708.336106023607" y="1052.0" />
+      <point x="-15.450000000000045" y="125.0" />
+    </edge>
+    <edge source="GAME.Menu.NewGameMenu" target="GAME.Input">
+      <point x="-35.5" y="-30.5" />
+      <point x="705.5835927960935" y="2109.0" />
+      <point x="570.7588878713882" y="2109.0" />
+      <point x="570.7588878713882" y="1835.0" />
+      <point x="592.0088878713882" y="1835.0" />
+      <point x="26.75" y="57.5" />
+    </edge>
+    <edge source="GAME.Game" target="GAME.Combat">
+      <point x="20.538461538461547" y="-112.0" />
+      <point x="1253.8848494098497" y="1835.0" />
+      <point x="1252.0380901505905" y="1835.0" />
+      <point x="0.0" y="58.0" />
+    </edge>
+    <edge source="GAME.Game" target="GAME.Input">
+      <point x="-123.23076923076928" y="-112.0" />
+      <point x="1110.115618640619" y="1835.0" />
+      <point x="645.5088878713882" y="1835.0" />
+      <point x="80.25" y="57.5" />
+    </edge>
+    <edge source="GAME.Menu.SaveGameMenu" target="GAME.Input">
+      <point x="17.875" y="-17.0" />
+      <point x="392.8361060236073" y="1825.0" />
+      <point x="431.50888787138825" y="1825.0" />
+      <point x="-133.75" y="57.5" />
+    </edge>
+    <edge source="GAME.Game" target="GAME.MapGenerator">
+      <point x="123.23076923076928" y="-112.0" />
+      <point x="1356.5771571021576" y="1835.0" />
+      <point x="2444.8755901505906" y="1835.0" />
+      <point x="147.5" y="341.5" />
+    </edge>
+    <edge source="GAME.Attack" target="GAME.Damage">
+      <point x="0.0" y="-71.0" />
+      <point x="1135.1361060236072" y="423.0" />
+      <point x="1153.9694393569407" y="423.0" />
+      <point x="0.0" y="57.5" />
+    </edge>
+    <edge source="GAME.Game" target="GAME.ConsolePrinter">
+      <point x="82.15384615384619" y="-112.0" />
+      <point x="1315.5002340252345" y="1815.0" />
+      <point x="1824.8755901505906" y="1815.0" />
+      <point x="1824.8755901505906" y="1042.0" />
+      <point x="1739.2361060236071" y="1042.0" />
+      <point x="15.450000000000045" y="125.0" />
+    </edge>
+    <edge source="GAME.Player" target="GAME.Entity">
+      <point x="-108.0" y="-125.5" />
+      <point x="1544.3755901505906" y="1022.0" />
+      <point x="1323.6422212047219" y="1022.0" />
+      <point x="149.33333333333348" y="166.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.9054347826086957" x="471.8307322929171" y="410.0" />
+  <settings layout="Hierarchic Group" zoom="0.33346364347146207" x="1323.560375146542" y="1277.0" />
   <SelectedNodes />
   <Categories>
     <Category>Inner Classes</Category>

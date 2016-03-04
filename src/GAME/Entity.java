@@ -99,6 +99,10 @@ public class Entity {
         return weapon;
     }
 
+    public void setWeapon(Damage weapon) {
+        this.weapon = weapon;
+    }
+
     public double attackDamage(int attackType){
         Attack attack = new Attack(weapon, Level);
         double damage = 0;

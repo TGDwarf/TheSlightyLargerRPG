@@ -4,7 +4,6 @@ import GAME.Menu.MenuFactory;
 import GAME.Menu.Menu;
 
 import java.awt.*;
-import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,16 +15,10 @@ public class Game {
     //TODO: BIG FUCKING TODO. Change draw map to retrieve list of creatures / player / corpses etc and add them to the map right before drawing, removing all the adding of monster to the map from the code
     private boolean inMapMenu = true;
     private static String lastCommand;
-    int oldTexture = 0;
-    int playerLevel = 1;
-
-    public String getPlayerName() {
-        return playerName;
-    }
-
-    public void setPlayerName(String playerName) {
-        this.playerName = playerName;
-    }
+    private int oldTexture = 0;
+    private int playerLevel = 1;
+    private int turnsInGame = 0;
+    private int creaturesDefeated = 0;
 
     private String playerName = "Default";
 
@@ -52,6 +45,7 @@ public class Game {
         consolePrinter.printMapInfo();
         while(inMapMenu){
             //TODO: Insert creature move code call here
+            //TODO: Insert code to add X creatures every time player has defeated X creatures
             String playerCommand = input.inGameGetKeyboardInput();
             if (playerCommand.equals("") && lastCommand != null || playerCommand.equals("w") || playerCommand.equals("a") || playerCommand.equals("s") || playerCommand.equals("d")){
                 movePlayer(playerCommand);
@@ -69,15 +63,28 @@ public class Game {
             }
             if (playerCommand.equals("u") ){
                 player.setExperience(player.getExperience()+50);
+                consolePrinter.print("You cheated! Good on you.");
             }
+            if (playerCommand.equals("p") ){
+                XMLHandler xmlHandler = new XMLHandler();
+                xmlHandler.XMLWriter(this);
+            }
+            if (playerCommand.equals("r") ){
+                XMLHandler xmlHandler = new XMLHandler();
+                xmlHandler.XMLReader();
+            }
+            if (playerCommand.equals("l") ){
+                //TODO: Retrieve highscore from sql server
+            }
+
             player.endturnHeal();
             if (player.getLevel() != (int)player.getExperience()/50+1){
                 player.setLevel((int)player.getExperience()/50+1);
                 player.setHealth_Max(player.calculateMaxHealth());
             }
 
-
-            //TODO: Update highscore on sql server, Playername + Experience
+            turnsInGame++;
+            //TODO: Update highscore on sql server, Playername + level + Experience + turns + creatures killed
         }
 
     }
@@ -112,6 +119,7 @@ public class Game {
                     Combat combat = new Combat(player, creature);
                     if (combat.getWinner().equals(player)){
                         player.setExperience(player.getExperience() + creature.getHealth_Max());
+                        creaturesDefeated++;
                         mapGenerator.borderedMap[creature.getLocation().x+mapGenerator.borderSize][creature.getLocation().y+mapGenerator.borderSize] = 2;
                     }
                     else {
@@ -191,6 +199,22 @@ public class Game {
                 break;
         }
 
+    }
+
+    public String getPlayerName() {
+        return playerName;
+    }
+
+    public void setPlayerName(String playerName) {
+        this.playerName = playerName;
+    }
+
+    public int getTurnsInGame() {
+        return turnsInGame;
+    }
+
+    public int getCreaturesDefeated() {
+        return creaturesDefeated;
     }
 
 }

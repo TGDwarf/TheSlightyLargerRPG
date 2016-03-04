@@ -38,7 +38,7 @@ public class WeaponDamage {
     private void spear(){
         damage.add(1.2);
         damage.add(9.0);
-        damage.add(12.9);
+        damage.add(14.6);
 
     }
     private void sword(){

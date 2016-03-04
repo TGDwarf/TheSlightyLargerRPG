@@ -97,6 +97,9 @@ public class ConsolePrinter {
         System.out.println("Type t to enter the main menu again");
         System.out.println("Type h to show this menu again");
         System.out.println("Type m to show this map info");
+        System.out.println("Type p to print game info to XML, this does not save the game!");
+        System.out.println("Type r to read game info from XML");
+        System.out.println("Type l to view the highscore saved on the SQL server");
     }
 
     public void gameoverScreen(){

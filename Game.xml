@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GAME_Info>
+  <Player_Info id="1">
+    <Player_Name:>Default</Player_Name:>
+    <Player_Level:>1</Player_Level:>
+    <Player_Experience:>28.0</Player_Experience:>
+    <Player_Health:>13.0</Player_Health:>
+    <Skill_List:>
+      <Hack/>
+      <Spin/>
+      <Cleave/>
+    </Skill_List:>
+  </Player_Info>
+  <Creature_Info id="2">
+    <Creature_Max_Health:>16.0</Creature_Max_Health:>
+    <Creature_Name:>Troll</Creature_Name:>
+    <Creature_Description:>A hideous being with bad breath</Creature_Description:>
+  </Creature_Info>
+  <Map_Info id="3">
+    <Number_of_turns_this_game:>176</Number_of_turns_this_game:>
+    <Creatures_Defeated:>2</Creatures_Defeated:>
+  </Map_Info>
+</GAME_Info>

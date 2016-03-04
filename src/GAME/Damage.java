@@ -12,7 +12,7 @@ public class Damage {
     private double maxDamage;
     private double attackSpeed;
 
-    Damage(WeaponTypes weapon){
+    public Damage(WeaponTypes weapon){
         WeaponDamage wd = new WeaponDamage();
         List<Double> damage = wd.getSpeedAndDamage(weapon);
         this.attackSpeed = damage.get(0);
