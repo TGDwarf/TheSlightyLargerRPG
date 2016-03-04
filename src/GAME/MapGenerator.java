@@ -43,6 +43,12 @@ public class MapGenerator {
         GenerateMap();
     }
 
+    /**
+     * Based on map width and height, fills a map with wall and open space via fillmap, then uses smoothmap to look a neighbouring cells, look up cellular automaton.
+     * Then processes the map, dividing it into regions of wall and open space and removing the ones below and above a certain size
+     * Sorts the list of open space regions, uses this to determine player spawn location (upper leftmost corner) and creature spawn locations (random number between region total size and 0)
+     * Lastly creates a border around the map matching the player view field to avoid array out of bounds exception while moving along the edges
+     */
     void GenerateMap() {
         map = new int[width][height];
         RandomFillMap();
@@ -77,9 +83,12 @@ public class MapGenerator {
         borderedMap[playerStartingLocation.x+borderSize][playerStartingLocation.y+borderSize] = 5;
     }
 
+    /**
+     * Divides the map up into regions and removes rooms below size X and removes walls below size Y
+     */
     void ProcessMap() {
         List<List<Point>> wallRegions = GetRegions(1);
-        int wallThresholdSize = 0;
+        int wallThresholdSize = 50;
 
         for (List<Point> wallRegion : wallRegions) {
             if (wallRegion.size() < wallThresholdSize) {
@@ -90,7 +99,7 @@ public class MapGenerator {
         }
 
         List<List<Point>> roomRegions = GetRegions(0);
-        int roomThresholdSize = 0;
+        int roomThresholdSize = 50;
         List<Room> survivingRooms = new ArrayList<Room>();
 
 
@@ -107,6 +116,9 @@ public class MapGenerator {
         ConnectClosestRooms(survivingRooms);
     }
 
+    /**
+     * @param allRooms currently not in use but some day!
+     */
     void ConnectClosestRooms(List<Room> allRooms) {
 
     }
@@ -160,6 +172,10 @@ public class MapGenerator {
     }
 
 
+    /**
+     * @param regionsToBeSorted the list of regions on the map
+     * @return the list in sorted order, higest to lowest
+     */
     public List<List<Point>> SortRegionsBySize(List<List<Point>> regionsToBeSorted) {
 
         Collections.sort(regionsToBeSorted, new Comparator<List>() {
@@ -173,11 +189,19 @@ public class MapGenerator {
     }
 
 
+    /**
+     * @param x the x coordinate
+     * @param y the y coordinate
+     * @return true if it is in map range
+     */
     boolean IsInMapRange(int x, int y) {
         return x >= 0 && x < width && y >= 0 && y < height;
     }
 
 
+    /**
+     * fills the map with either wall or open space based on the randomfillpercent variable
+     */
     void RandomFillMap() {
 
         if (useRandomSeed) {
@@ -198,6 +222,10 @@ public class MapGenerator {
         }
     }
 
+    /**
+     * Depending on number of walls nearby either creates a wall or an open space
+     * Look up cellular automaton and particularly the game of life by John Conway
+     */
     void SmoothMap() {
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {
@@ -212,6 +240,11 @@ public class MapGenerator {
         }
     }
 
+    /**
+     * @param gridX the grid x position
+     * @param gridY the grid y position
+     * @return looks at the tiles nearby for each tile and determines the amount of walls nearby
+     */
     int GetSurroundingWallCount(int gridX, int gridY) {
         int wallCount = 0;
         for (int neighbourX = gridX - 1; neighbourX <= gridX + 1; neighbourX++) {
@@ -229,6 +262,9 @@ public class MapGenerator {
         return wallCount;
     }
 
+    /**
+     * Used in bug testing
+     */
     public void printRegionList() {
         List<List<Point>> sortedRegionsBySize;
         sortedRegionsBySize = SortRegionsBySize(regions);
@@ -238,10 +274,16 @@ public class MapGenerator {
         System.out.print(sortedRegionsBySize);
     }
 
+    /**
+     * Method containing sort method, could remove and call directly
+     */
     void makeRegionsSorted(){
         SortRegionsBySize(regions);
     }
 
+    /**
+     * gets the open spaces region list and sets the player starting location to the top left most spot
+     */
     void determinePlayerStartingPosition() {
         List<List<Point>> playerSortedRegions;
         playerSortedRegions = regions;
@@ -249,6 +291,11 @@ public class MapGenerator {
 
     }
 
+    /**
+     * generates a list of creature spawn location based on the monster density multiplied by
+     * how large the main region is (the one traversibly in the current state of the game)
+     * devided by 1 number that sorta seemed to work out okay
+     */
     void determineCreatureStartingPositions() {
         List<List<Point>> creatureSortedRegions;
         creatureSortedRegions = regions;
@@ -264,6 +311,10 @@ public class MapGenerator {
         }
     }
 
+    /**
+     * responsible for determining what is a room, uses flod flow algorithm,
+     * same as used in the program paint's 'paintbucket' this is explained very well in the video linked in the readme
+     */
     class Room {
         public List<Point> tiles;
         public List<Point> edgeTiles;
@@ -320,6 +371,9 @@ public class MapGenerator {
         }
     }
 
+    /**
+     * @param playerLocation draws a map to console centered around the player location in the size given by playerviewfield
+     */
     void DrawPlayerMap(Point playerLocation) {
         consolePrinter.clearScreen();
 

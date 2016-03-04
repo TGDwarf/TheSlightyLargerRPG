@@ -5,6 +5,9 @@ import GAME.Menu.MenuFactory;
 
 public class Main {
 
+    /**
+     * @param args Its a me, mainio!
+     */
     public static void main(String[] args) {
 
         StartUp startUp = new StartUp();

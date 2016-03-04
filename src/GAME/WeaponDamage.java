@@ -8,8 +8,6 @@ import java.util.List;
  *
  * Modified by dot on 29-02-2016.
  */
-
-//TODO: Modify values to reflect name changes
 public class WeaponDamage {
     private List<Double> damage = new ArrayList<>();
 
@@ -47,6 +45,10 @@ public class WeaponDamage {
         damage.add(13.3);
     }
 
+    /**
+     * @param weapon the weapon type to find dmg for
+     * @return returns a list of dmg values
+     */
     public List<Double> getSpeedAndDamage(WeaponTypes weapon){
         switch (weapon){
             case Axe:

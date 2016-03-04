@@ -114,7 +114,6 @@ Added 5 simple Unit Tests, nothing fancy and since they are based mostly on the 
 JDBC:
 After using about 4+ hours from initial setup of MySQL server until first insert from IntelliJ worked, well it was a struggle, but once the first insert was done, update and select was fairly quick, only taking about 1½ hour to get it all working.
 
-
-
 JSF:
-
+Din't have time for JSF this round, really annoying considering I work with JSF on a daily basis usually but figuering out how to convert console to web app while using a new IDE and all.. well, enough bad excuses, dint get it done, end of the line.'
+Hope you this app nevertheless.

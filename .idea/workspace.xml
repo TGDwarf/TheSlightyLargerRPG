@@ -2,23 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a90d8d2-394a-4d9a-974f-20b2529c1d48" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/TheSlightyLargerRPG_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/TheSlightyLargerRPG_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/WebContent_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_el_el_ri_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_api_2_1_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_impl_2_1_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Mojarra_2_2_1.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid1936.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ojdbc6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/students.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/ClassDiagram.uml" afterPath="$PROJECT_DIR$/src/GAME/ClassDiagram.uml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Attack.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Attack.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/ClassDiagram.uml" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/ClassDiagram.uml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Combat.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Combat.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/ConsolePrinter.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/ConsolePrinter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Creature.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Creature.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Damage.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Damage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Entity.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Entity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Game.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Game.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Input.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Input.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/LeaderboardSQL.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/LeaderboardSQL.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Main.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/MapGenerator$1.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/MapGenerator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/MapGenerator$Room.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/MapGenerator$Room.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/MapGenerator.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/MapGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$1.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$2.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$3.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$4.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$5.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$6.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$7.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$8.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/NewGameMenu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/SaveGameMenu.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Menu/SaveGameMenu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Player.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/Player.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/StartUp.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/StartUp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/WeaponDamage$1.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/WeaponDamage$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/WeaponDamage.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/WeaponDamage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/XMLHandler.class" afterPath="$PROJECT_DIR$/out/production/TheSlightyLargerRPG/GAME/XMLHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game.xml" afterPath="$PROJECT_DIR$/Game.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java" afterPath="$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Readme.md" afterPath="$PROJECT_DIR$/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Attack.java" afterPath="$PROJECT_DIR$/src/GAME/Attack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Combat.java" afterPath="$PROJECT_DIR$/src/GAME/Combat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/ConsolePrinter.java" afterPath="$PROJECT_DIR$/src/GAME/ConsolePrinter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Creature.java" afterPath="$PROJECT_DIR$/src/GAME/Creature.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Damage.java" afterPath="$PROJECT_DIR$/src/GAME/Damage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Entity.java" afterPath="$PROJECT_DIR$/src/GAME/Entity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Game.java" afterPath="$PROJECT_DIR$/src/GAME/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Input.java" afterPath="$PROJECT_DIR$/src/GAME/Input.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/LeaderboardSQL.java" afterPath="$PROJECT_DIR$/src/GAME/LeaderboardSQL.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Main.java" afterPath="$PROJECT_DIR$/src/GAME/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/MapGenerator.java" afterPath="$PROJECT_DIR$/src/GAME/MapGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java" afterPath="$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/Player.java" afterPath="$PROJECT_DIR$/src/GAME/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/StartUp.java" afterPath="$PROJECT_DIR$/src/GAME/StartUp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/WeaponDamage.java" afterPath="$PROJECT_DIR$/src/GAME/WeaponDamage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GAME/XMLHandler.java" afterPath="$PROJECT_DIR$/src/GAME/XMLHandler.java" />
     </list>
     <ignored path="TheSlightyLargerRPG.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,49 +90,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="LeaderboardSQL.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GAME/LeaderboardSQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1457067520444" expanded="true" signature="649:798" placeholder="INSERT INTO userhighscore... " />
-                <marker date="1457067520444" expanded="true" signature="2789:2936" placeholder="UPDATE userh... " />
-                <marker date="1457067520444" expanded="true" signature="4338:4398" placeholder="UPDATE userh... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GAME/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-              <folding>
-                <element signature="method#movePlayer#0;class#Game#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewGameMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MapGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/MapGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="374" column="124" selection-start-line="374" selection-start-column="124" selection-end-line="374" selection-end-column="124" />
+              <folding>
+                <element signature="e#6124#6125#0" expanded="true" />
+                <element signature="e#6190#6191#0" expanded="true" />
+                <element signature="e#8641#8642#0" expanded="true" />
+                <element signature="e#8683#8684#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor vertical-scroll-proportion="0.07317073">
-                <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
+              <first_editor vertical-scroll-proportion="0.83902436">
+                <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -110,158 +138,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoadGameMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GAME/Menu/LoadGameMenu.java">
+      <file leaf-file-name="Quest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/Quest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaveGameMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java">
+      <file leaf-file-name="StartUp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/StartUp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TheSlightyLargerRPG.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TheSlightyLargerRPG.iml">
+      <file leaf-file-name="WeaponDamage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/WeaponDamage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassDiagram.uml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GAME/ClassDiagram.uml">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement />
-              <nodes>
-                <node x="1095.0" y="1430.0">GAME.Damage</node>
-                <node x="706.0" y="1045.5">GAME.Menu.MainMenu</node>
-                <node x="1404.0" y="1591.0">GAME.WeaponTypes</node>
-                <node x="0.0" y="866.0">GAME.Game</node>
-                <node x="1289.0" y="1045.5">GAME.Menu.LoadGameMenu</node>
-                <node x="705.75" y="0.0">GAME.Entity</node>
-                <node x="142.0" y="733.0">GAME.MapGenerator.Room</node>
-                <node x="273.0" y="1591.0">GAME.Menu.MenuFactory</node>
-                <node x="799.0" y="1591.0">GAME.Main</node>
-                <node x="0.0" y="1430.0">GAME.Combat</node>
-                <node x="352.0" y="866.0">GAME.ConsolePrinter</node>
-                <node x="0.0" y="0.0">GAME.MapGenerator</node>
-                <node x="394.0" y="1430.0">GAME.Input</node>
-                <node x="964.0" y="1045.5">GAME.Menu.SaveGameMenu</node>
-                <node x="1217.0" y="1591.0">GAME.Menu.MenuCallback</node>
-                <node x="873.0" y="1189.0">GAME.Attack</node>
-                <node x="1127.0" y="1032.0">GAME.Menu.NewGameMenu</node>
-                <node x="1579.0" y="1591.0">GAME.IMapTextures</node>
-                <node x="635.0" y="382.0">GAME.Player</node>
-                <node x="760.0" y="1430.0">UnitTests.DamageTest</node>
-                <node x="483.0" y="1189.0">GAME.LeaderboardSQL</node>
-                <node x="1369.0" y="1430.0">GAME.Menu.MenuItem</node>
-                <node x="869.5" y="866.0">GAME.Menu.Menu</node>
-                <node x="0.0" y="1189.0">UnitTests.WeaponTest</node>
-                <node x="1367.0" y="1273.0">GAME.Armor</node>
-                <node x="0.0" y="1591.0">GAME.XMLHandler</node>
-                <node x="0.0" y="1724.0">GAME.Quest</node>
-                <node x="569.0" y="1591.0">UnitTests.CreatureTest</node>
-                <node x="979.0" y="477.0">GAME.Creature</node>
-                <node x="1198.75" y="0.0">UnitTests.PlayerTest</node>
-                <node x="1125.0" y="1189.0">UnitTests.AttackTest</node>
-                <node x="1025.0" y="1591.0">GAME.StartUp</node>
-                <node x="832.0" y="1045.5">GAME.Menu.BattleMenu</node>
-                <node x="1373.0" y="1189.0">GAME.Item</node>
-                <node x="1479.0" y="866.0">GAME.WeaponDamage</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="GAME.Armor" target="GAME.Item">
-                  <point x="0.0" y="-17.0" />
-                  <point x="0.0" y="17.0" />
-                </edge>
-                <edge source="GAME.MapGenerator.Room" target="GAME.MapGenerator">
-                  <point x="0.0" y="-44.0" />
-                  <point x="0.0" y="341.5" />
-                </edge>
-                <edge source="GAME.Menu.BattleMenu" target="GAME.Menu.Menu">
-                  <point x="0.0" y="-17.0" />
-                  <point x="888.0" y="1012.0" />
-                  <point x="969.1" y="1012.0" />
-                  <point x="-66.39999999999998" y="58.0" />
-                </edge>
-                <edge source="GAME.Menu.MainMenu" target="GAME.Menu.Menu">
-                  <point x="0.0" y="-17.0" />
-                  <point x="759.0" y="1002.0" />
-                  <point x="902.7" y="1002.0" />
-                  <point x="-132.79999999999995" y="58.0" />
-                </edge>
-                <edge source="GAME.Menu.NewGameMenu" target="GAME.Menu.Menu">
-                  <point x="0.0" y="-30.5" />
-                  <point x="1198.0" y="1012.0" />
-                  <point x="1101.9" y="1012.0" />
-                  <point x="66.40000000000009" y="58.0" />
-                </edge>
-                <edge source="GAME.Menu.SaveGameMenu" target="GAME.Menu.Menu">
-                  <point x="0.0" y="-17.0" />
-                  <point x="0.0" y="58.0" />
-                </edge>
-                <edge source="GAME.Creature" target="GAME.Entity">
-                  <point x="0.0" y="-30.5" />
-                  <point x="1062.5" y="357.0" />
-                  <point x="1041.75" y="357.0" />
-                  <point x="112.0" y="166.0" />
-                </edge>
-                <edge source="GAME.Menu.LoadGameMenu" target="GAME.Menu.Menu">
-                  <point x="0.0" y="-17.0" />
-                  <point x="1361.5" y="1002.0" />
-                  <point x="1168.3" y="1002.0" />
-                  <point x="132.79999999999995" y="58.0" />
-                </edge>
-                <edge source="GAME.Player" target="GAME.Entity">
-                  <point x="0.0" y="-125.5" />
-                  <point x="797.0" y="357.0" />
-                  <point x="817.75" y="357.0" />
-                  <point x="-112.0" y="166.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.4797525309336333" x="860.5" y="879.0" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Inner Classes</Category>
-                <Category>Properties</Category>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GAME/Item.java">
+      <file leaf-file-name="WeaponTypes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/WeaponTypes.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Combat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GAME/Combat.java">
+      <file leaf-file-name="XMLHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GAME/XMLHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <caret line="154" column="90" selection-start-line="154" selection-start-column="90" selection-end-line="154" selection-end-column="90" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttackTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UnitTests/AttackTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -298,44 +231,44 @@
         <option value="$PROJECT_DIR$/src/GAME/Menu.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/Mainmenu.java" />
         <option value="$PROJECT_DIR$/src/GAME/startUp.java" />
-        <option value="$PROJECT_DIR$/src/GAME/StartUp.java" />
         <option value="$PROJECT_DIR$/src/GAME/Textures.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Input.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/Menu.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/MenuItem.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Main.java" />
         <option value="$PROJECT_DIR$/src/GAME/WeaponType.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/MenuCallback.java" />
-        <option value="$PROJECT_DIR$/src/GAME/MapGenerator.java" />
         <option value="$PROJECT_DIR$/src/GAME/WeaponTypes.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Damage.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/BattleMenu.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Creature.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/MenuFactory.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/LoadGameMenu.java" />
         <option value="$PROJECT_DIR$/src/GAME/IMapTextures.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Attack.java" />
-        <option value="$PROJECT_DIR$/src/GAME/ConsolePrinter.java" />
         <option value="$PROJECT_DIR$/src/GAME/Quest.java" />
         <option value="$PROJECT_DIR$/src/GAME/Item.java" />
         <option value="$PROJECT_DIR$/src/GAME/Armor.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Entity.java" />
         <option value="$PROJECT_DIR$/src/UnitTests/CreatureTest.java" />
-        <option value="$PROJECT_DIR$/src/GAME/WeaponDamage.java" />
         <option value="$PROJECT_DIR$/src/UnitTests/WeaponTest.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Player.java" />
-        <option value="$PROJECT_DIR$/src/GAME/XMLHandler.java" />
-        <option value="$PROJECT_DIR$/src/UnitTests/AttackTest.java" />
         <option value="$PROJECT_DIR$/src/UnitTests/DamageTest.java" />
         <option value="$PROJECT_DIR$/src/UnitTests/PlayerTest.java" />
         <option value="$PROJECT_DIR$/src/GAME/JDBCThing.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Combat.java" />
-        <option value="$PROJECT_DIR$/src/GAME/Game.java" />
-        <option value="$PROJECT_DIR$/src/GAME/LeaderboardSQL.java" />
-        <option value="$PROJECT_DIR$/Readme.md" />
         <option value="$PROJECT_DIR$/src/GAME/Menu/SaveGameMenu.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Attack.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Combat.java" />
+        <option value="$PROJECT_DIR$/src/GAME/ConsolePrinter.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Creature.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Damage.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Entity.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Input.java" />
+        <option value="$PROJECT_DIR$/src/GAME/LeaderboardSQL.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Main.java" />
+        <option value="$PROJECT_DIR$/src/GAME/MapGenerator.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Player.java" />
+        <option value="$PROJECT_DIR$/src/GAME/StartUp.java" />
+        <option value="$PROJECT_DIR$/src/GAME/WeaponDamage.java" />
+        <option value="$PROJECT_DIR$/src/GAME/XMLHandler.java" />
+        <option value="$PROJECT_DIR$/src/UnitTests/AttackTest.java" />
+        <option value="$PROJECT_DIR$/src/GAME/Game.java" />
+        <option value="$PROJECT_DIR$/Readme.md" />
       </list>
     </option>
   </component>
@@ -419,6 +352,64 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheSlightyLargerRPG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheSlightyLargerRPG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnitTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheSlightyLargerRPG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheSlightyLargerRPG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GAME" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheSlightyLargerRPG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheSlightyLargerRPG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GAME" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -431,7 +422,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/GAME" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BankConsoleApp V2" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -1008,7 +999,7 @@
       <workItem from="1456445141473" duration="58342000" />
       <workItem from="1456817271345" duration="34048000" />
       <workItem from="1456920040433" duration="42732000" />
-      <workItem from="1457077200784" duration="486000" />
+      <workItem from="1457077200784" duration="4989000" />
     </task>
     <servers />
   </component>
@@ -1045,7 +1036,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230341000" />
+    <option name="totallyTimeSpent" value="234844000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1058,7 +1049,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1066,11 +1057,11 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42219803" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="WINDOWED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-9" y="-9" width="1938" height="1050" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="WINDOWED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-6" y="-23" width="1932" height="1050" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1099,14 +1090,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GAME/Game.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="172" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="173" />
     </breakpoint-manager>
     <watches-manager />
@@ -1120,20 +1103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/IMapTextures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/MapGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="255" column="33" selection-start-line="255" selection-start-column="23" selection-end-line="255" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1152,13 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/com/sun/org/apache/xerces/internal/dom/CoreDocumentImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1173,28 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Creature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Armor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UnitTests/WeaponTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4785553">
@@ -1202,45 +1142,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/WeaponTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/StartUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Quest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/XMLHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="222" column="59" selection-start-line="222" selection-start-column="59" selection-end-line="222" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/WeaponDamage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1258,31 +1159,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Attack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UnitTests/DamageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UnitTests/AttackTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Damage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1291,13 +1174,6 @@
         <state vertical-scroll-proportion="0.5582329">
           <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/ConsolePrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1364,14 +1240,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4785553">
           <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1379,19 +1250,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.82894737">
           <caret line="384" column="0" selection-start-line="384" selection-start-column="0" selection-end-line="384" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1430,64 +1289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Combat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-          <folding>
-            <element signature="method#movePlayer#0;class#Game#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/LeaderboardSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1457067520444" expanded="true" signature="649:798" placeholder="INSERT INTO userhighscore... " />
-            <marker date="1457067520444" expanded="true" signature="2789:2936" placeholder="UPDATE userh... " />
-            <marker date="1457067520444" expanded="true" signature="4338:4398" placeholder="UPDATE userh... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor vertical-scroll-proportion="0.07317073">
-            <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GAME/Menu/LoadGameMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1508,14 +1309,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GAME/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1613,7 +1406,7 @@
               <point x="-112.0" y="166.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.4797525309336333" x="860.5" y="879.0" />
+          <settings layout="Hierarchic Group" zoom="0.4797525309336333" x="-309.89507620164136" y="490.25791324736224" />
           <SelectedNodes />
           <Categories>
             <Category>Inner Classes</Category>
@@ -1622,6 +1415,221 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Armor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Attack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Combat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/ConsolePrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Creature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Damage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="24" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1305#1306#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Menu/NewGameMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/IMapTextures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Input.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/LeaderboardSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="199" column="28" selection-start-line="199" selection-start-column="28" selection-end-line="199" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1457079776936" expanded="true" signature="821:970" placeholder="INSERT INTO userhighscore... " />
+            <marker date="1457079776936" expanded="true" signature="3061:3208" placeholder="UPDATE userh... " />
+            <marker date="1457079776936" expanded="true" signature="4673:4733" placeholder="UPDATE userh... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/MapGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="374" column="124" selection-start-line="374" selection-start-column="124" selection-end-line="374" selection-end-column="124" />
+          <folding>
+            <element signature="e#6124#6125#0" expanded="true" />
+            <element signature="e#6190#6191#0" expanded="true" />
+            <element signature="e#8641#8642#0" expanded="true" />
+            <element signature="e#8683#8684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Quest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/StartUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/WeaponDamage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/WeaponTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/XMLHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="154" column="90" selection-start-line="154" selection-start-column="90" selection-end-line="154" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UnitTests/AttackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GAME/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor vertical-scroll-proportion="0.83902436">
+            <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

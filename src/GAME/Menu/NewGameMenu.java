@@ -1,6 +1,5 @@
 package GAME.Menu;
 
-import GAME.ConsolePrinter;
 import GAME.Game;
 import GAME.Input;
 
@@ -49,7 +48,7 @@ public class NewGameMenu extends Menu {
         this.Add("Accept settings and start game", new MenuCallback() {
             public void Invoke() {
 
-                game.startUp();
+                game.start();
             }
         });
         this.Add("Please enter a player name - Default Name = " + game.getPlayerName(), new MenuCallback() {

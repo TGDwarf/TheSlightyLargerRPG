@@ -46,6 +46,9 @@ public class Player extends Entity {
         super(name, description, level, weapon);
     }
 
+    /**
+     * @return returns if the player has used his/her potions for this combat
+     */
     public String potionsLeft(){
         if (potionUsed == true) {
             return "You have no potions left";
@@ -55,6 +58,9 @@ public class Player extends Entity {
         }
     }
 
+    /**
+     * heals the player based on max hp, currently a must use at level 1, but becomes stupidly op after level 2, balance maybe?
+     */
     public void heal(){
         if (potionUsed == false){
             setHealth((int)Math.min(getHealth_Max(),getHealth() + (getHealth_Max()*0.6)));
@@ -66,6 +72,9 @@ public class Player extends Entity {
         }
     }
 
+    /**
+     * the player ends a turn at low health, instead of instaheal, why not do it gradually (might result in gameover for first time players, hehe)
+     */
     public void endturnHeal(){
         if (getHealth() < getHealth_Max()){
             setHealth(getHealth()+0.5* this.Level);
@@ -75,6 +84,11 @@ public class Player extends Entity {
         }
     }
 
+    /**
+     * @param monster the monster to attack
+     * @param attacktype the attack type to use
+     * @return the attack dmg do deal
+     */
     public int attack(Entity monster, int attacktype){
         int attackDamage = (int)this.attackDamage(attacktype);
         monster.setHealth((monster.getHealth() > attackDamage) ? monster.getHealth() - attackDamage : 0);

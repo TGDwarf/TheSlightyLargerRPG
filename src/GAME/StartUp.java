@@ -5,6 +5,10 @@ package GAME;
  */
 public class StartUp {
     ConsolePrinter consolePrinter = new ConsolePrinter();
+
+    /**
+     * Just prints stuff really
+     */
     public void startUp(){
         consolePrinter.printLogo();
 

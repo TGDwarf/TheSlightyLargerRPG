@@ -17,6 +17,11 @@ public class Combat {
 
     private Entity winner;
 
+    /**
+     * @param creature the creature the player is fighting
+     * @param player the player, like creature, used in the health / dmg calculations
+     * @param attackOption which attack is used
+     */
     public void playerAttack(Creature creature, Player player, int attackOption){
         int AttackDamage = player.attack(creature,attackOption);
 
@@ -33,6 +38,10 @@ public class Combat {
         }
     }
 
+    /**
+     * @param creature the creature the player is fighting
+     * @param player the player, like creature, used in the health / dmg calculations
+     */
     public void creatureAttack(Creature creature, Player player){
         int AttackDmg = creature.attack(player);
 
@@ -47,6 +56,11 @@ public class Combat {
         }
     }
 
+    /**
+     * Writes some text then starts the main combat section and shows a battle menu for the player until end of combat
+     * @param player the player
+     * @param creature the creature
+     */
     public Combat(Player player, Creature creature) {
 
         consolePrinter.print("You encounter " + creature.getName() + ": " + creature.getDescription());

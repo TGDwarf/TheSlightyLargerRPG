@@ -12,6 +12,9 @@ public class Damage {
     private double maxDamage;
     private double attackSpeed;
 
+    /**
+     * @param weapon initializes and creates a list of dmg values, attack speed, min / max dmg
+     */
     public Damage(WeaponTypes weapon){
         WeaponDamage wd = new WeaponDamage();
         List<Double> damage = wd.getSpeedAndDamage(weapon);

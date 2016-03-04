@@ -102,12 +102,18 @@ public class ConsolePrinter {
         System.out.println("Type l to view the highscore saved on the SQL server");
     }
 
+    /**
+     * Prints the game over screen
+     */
     public void gameoverScreen(){
         // Failure Screen
         System.out.println("The game is over, you lost... maybe try again?");
         System.out.println();
     }
 
+    /**
+     * Prints map info
+     */
     public void printMapInfo(){
         System.out.println("floorTexture = \" \"");
         System.out.println("wallTexture = \"X\"");

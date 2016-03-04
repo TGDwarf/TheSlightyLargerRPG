@@ -12,12 +12,12 @@
     </Skill_List:>
   </Player_Info>
   <Creature_Info id="2">
-    <Creature_Max_Health:>16.0</Creature_Max_Health:>
+    <Creature_Max_Health:>15.0</Creature_Max_Health:>
     <Creature_Name:>Troll</Creature_Name:>
     <Creature_Description:>A hideous being with bad breath</Creature_Description:>
   </Creature_Info>
   <Map_Info id="3">
-    <Number_of_turns_this_game:>28</Number_of_turns_this_game:>
+    <Number_of_turns_this_game:>2</Number_of_turns_this_game:>
     <Creatures_Defeated:>0</Creatures_Defeated:>
   </Map_Info>
 </GAME_Info>

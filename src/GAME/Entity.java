@@ -21,6 +21,13 @@ public class Entity {
 
     private Damage weapon;
 
+    /**
+     * Constructor
+     * @param name the name of the entity
+     * @param description the description for the entity
+     * @param level the initial level
+     * @param weapon the start weapon
+     */
     public Entity(String name, String description, int level, Damage weapon){
         this.Name = name;
         this.Description = description;
@@ -30,6 +37,10 @@ public class Entity {
         this.Alive = true;
         this.weapon = weapon;
     }
+
+    /**
+     * @return makes the game a bit more random by not using a flag hp value pr level
+     */
     public double calculateMaxHealth(){
         return Level * ThreadLocalRandom.current().nextInt(13, 17);
     }
@@ -66,7 +77,6 @@ public class Entity {
         Health = health;
     }
 
-    //TODO: Create check in combat to set dead or alive
     public boolean isAlive() {
         return Alive;
     }

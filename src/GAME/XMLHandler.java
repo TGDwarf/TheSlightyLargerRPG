@@ -21,9 +21,11 @@ import java.io.IOException;
  */
 public class XMLHandler {
 
+    /**
+     * @param game the game object
+     * Writes a lot of things to an XML file located in the game folder
+     */
     public void XMLWriter(Game game) {
-
-        //DEV NOTE: Example from Michael works perfectly, have tried to understand why the few changes I have made broke it, but at the moment I cant figure out why.
 
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder = null;
@@ -149,6 +151,9 @@ public class XMLHandler {
         System.out.println("XML File saved!");
     }
 
+    /**
+     * Reads the info in the XML file location in the game folder and prints it to console
+     */
     public void XMLReader() {
 
         //Create Document Builder

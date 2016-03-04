@@ -12,7 +12,9 @@ import java.util.List;
  */
 public class Game {
 
-    //TODO: BIG FUCKING TODO. Change draw map to retrieve list of creatures / player / corpses etc and add them to the map right before drawing, removing all the adding of monster to the map from the code
+    //TODO: BIG FUCKING TODO. Change draw map to retrieve list of creatures / player / corpses etc
+    //TODO: Then add them to the map right before drawing, removing all the adding of monster to the map from the game code
+    //TODO: Freaking annoys me that i haven't had time to do this :/
     private boolean inMapMenu = true;
     private static String lastCommand;
     private int oldTexture = 0;
@@ -25,29 +27,36 @@ public class Game {
     public MapGenerator mapGenerator = new MapGenerator();
     MenuFactory menuFactory = new MenuFactory();
     ConsolePrinter consolePrinter = new ConsolePrinter();
-    Player player = new Player(playerName, "the player", playerLevel, new Damage(WeaponTypes.Hands) );
+    Player player = new Player(playerName, "The player", playerLevel, new Damage(WeaponTypes.Hands) );
     Input input = new Input();
     Creature creature;
     List<Creature> creatures = new ArrayList<>();
     LeaderboardSQL leaderboardSQL = new LeaderboardSQL();
 
-    public void startUp() {
-
-        //consolePrinter.clearScreen();
+    public void start() {
 
         mapGenerator.Start();
 
-        //mapGenerator.printRegionList();
-        mapGenerator.DrawWorldMap();
+        //mapGenerator.DrawWorldMap();
         player.setLocation(mapGenerator.playerStartingLocation);
         spawnCreatures();
 
         leaderboardSQL.insertIntoLeaderBoard(this);
         mapGenerator.DrawPlayerMap(player.getLocation());
         consolePrinter.printMapInfo();
+
+        mainGameLoop();
+    }
+
+    /**
+     * Contains map menu and all the things that should be done at the end of each turn
+     */
+    //TODO: Remove end of turn stuff to seperate method to call
+    private void mainGameLoop(){
         while(inMapMenu){
             //TODO: Insert creature move code call here
-            //TODO: Insert code to add X creatures every time player has defeated X creatures
+            //TODO: Insert code to add X creatures every time player has defeated X creatures, otherwise all mobs are gonna be level 1, forever and ever
+            //TODO: Should check for mobs too low level compared to the player and replace them with higher level mobs
             String playerCommand = input.inGameGetKeyboardInput();
             if (playerCommand.equals("") && lastCommand != null || playerCommand.equals("w") || playerCommand.equals("a") || playerCommand.equals("s") || playerCommand.equals("d")){
                 movePlayer(playerCommand);
@@ -86,11 +95,12 @@ public class Game {
             }
 
             turnsInGame++;
-            //TODO: Update highscore on sql server, Playername + level + Experience + turns + creatures killed
         }
-
     }
 
+    /**
+     * Gets a list of spawn locations for creatures from the map generator and creates a creature for each location
+     */
     private void spawnCreatures(){
         for (Point spawnPoint : mapGenerator.creatureSpawnLocations) {
             creature = new Creature("Troll", "A hideous being with bad breath", playerLevel, new Damage(WeaponTypes.Hands));
@@ -100,6 +110,10 @@ public class Game {
         }
     }
 
+    /**
+     * @param destination the point the player whishes to enter
+     * @return checks that the point does not contain a wall
+     */
     private boolean isValidMove(Point destination){
         if(mapGenerator.borderedMap[destination.x+mapGenerator.borderSize][destination.y+mapGenerator.borderSize] == 1){
             return false;
@@ -110,10 +124,16 @@ public class Game {
 
     }
 
+    /**
+     * @param texture used to move the player icon around the map, hopefully soon made obsolete by moving draw code
+     */
     void playerLocationMapTextureUpdate(int texture){
         mapGenerator.borderedMap[player.getLocation().x+mapGenerator.borderSize][player.getLocation().y+mapGenerator.borderSize] = texture;
     }
 
+    /**
+     * @param destination checks the destination for a creature and starts combat if met
+     */
     private void checkForCombat(Point destination){
         for (Creature creature : creatures) {
             if (creature.getLocation().equals(destination)) {
@@ -135,6 +155,9 @@ public class Game {
         }
     }
 
+    /**
+     * @param playerInput contains the different directions to move as well as a bit of code that repeats the last successful command
+     */
     private void movePlayer(String playerInput)
     {
         Point destination = new Point();

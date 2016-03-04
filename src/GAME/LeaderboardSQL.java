@@ -14,6 +14,9 @@ public class LeaderboardSQL {
     private int generatedKey = 1;
 
 
+    /**
+     * @param game called at the start of the game, creates and inserts a player into the highscore sql db and returns the auto generated id for future use
+     */
     public void insertIntoLeaderBoard(Game game) {
 
         Connection dbConnection = null;
@@ -75,6 +78,9 @@ public class LeaderboardSQL {
 
     }
 
+    /**
+     * @param game called everytime a combat ends, updates the user based on the id
+     */
     public void updateLeaderBoard(Game game){
 
         Connection dbConnection = null;
@@ -126,6 +132,9 @@ public class LeaderboardSQL {
 
     }
 
+    /**
+     * prints out the top 5 in the leaderboard
+     */
     public void getLeaderboard(){
         Connection dbConnection = null;
         PreparedStatement preparedStatement = null;
@@ -187,6 +196,9 @@ public class LeaderboardSQL {
         }
     }
 
+    /**
+     * @return a db connection
+     */
     private static Connection getDBConnection() {
 
         Connection dbConnection = null;

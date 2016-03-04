@@ -9,6 +9,10 @@ public class Creature extends Entity {
         super(name, description, level, weapon);
     }
 
+    /**
+     * @param player the player to attack
+     * @return the attack dmg of the creature
+     */
     public int attack(Player player) {
         int attackDamage = (int) this.attackDamage(1);
         player.setHealth((player.getHealth() > attackDamage) ? player.getHealth() - attackDamage : 0);

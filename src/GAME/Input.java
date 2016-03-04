@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class Input {
     /**
-     * @return listens for keyboard input and returns it
+     * @return listens for keyboard input and returns it, used when no menu is shown
      */
     public String inGameGetKeyboardInput() {
         System.out.print("> ");
@@ -16,6 +16,10 @@ public class Input {
         input.toLowerCase();
         return input;
     }
+
+    /**
+     * @return listens for keyboard input and returns it, used in menus
+     */
     public String menuGetKeyboardInput() {
         Scanner in = new Scanner(System.in);
         String input = in.nextLine();
@@ -23,6 +27,9 @@ public class Input {
         return input;
     }
 
+    /**
+     * @return listens for keyboard input and returns it, used in menus
+     */
     public int menuGetIntKeyboardInput() {
         Scanner in = new Scanner(System.in);
         int input = 0;
