@@ -96,10 +96,6 @@ If the player dies, he’s bounced back to the previous field - Waaay to soft, i
 
 Next up:
 
-Unit Testing:
-
-JDBC:
-
 XML:
 Took the code provided by Michael Nielsen at: http://codeblog.dk/wordpress/?p=145
 I got the idea to just print out various data from the game object to show that i knew how it works.
@@ -111,6 +107,13 @@ transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 
 And yes I am aware that for this example that I am using, with different elements player, monster, map the whole read part of the xml code does not make a lot of sense.
 But changing it would take time, and would not add to the program anything of value.
+
+Unit Testing:
+Added 5 simple Unit Tests, nothing fancy and since they are based mostly on the files I got assistance from Morten to make, its nothing to brag about, but I know how they are supposed to work, and after correcting them to my code they still work.
+
+JDBC:
+After using about 4+ hours from initial setup of MySQL server until first insert from IntelliJ worked, well it was a struggle, but once the first insert was done, update and select was fairly quick, only taking about 1½ hour to get it all working.
+
 
 
 JSF:
